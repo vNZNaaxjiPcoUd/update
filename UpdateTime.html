@@ -1,53 +1,51 @@
-24/05/03 10:39:28
+24/05/03 10:42:37
 
 l
 
     inet 127.0.0.1/8 scope host lo
     inet6 ::1/128 scope host 
     inet 192.168.1.124/24 brd 192.168.1.255 scope global dynamic noprefixroute eno1
-    inet6 fda0:2c53:696e:913d:e154:7e22:da0c:67d2/64 scope global temporary dynamic 
+    inet6 fda0:2c53:696e:913d:9e83:c994:1c00:8d24/64 scope global temporary dynamic 
     inet6 fda0:2c53:696e:913d:bd4:7684:e45b:9c4/64 scope global dynamic mngtmpaddr noprefixroute 
     inet6 fe80::9c09:7848:b980:c11/64 scope link noprefixroute 
     inet 192.168.1.169/24 brd 192.168.1.255 scope global dynamic noprefixroute wlx78542e05b134
-    inet6 fda0:2c53:696e:913d:78c9:bd32:72a4:9f90/64 scope global temporary dynamic 
+    inet6 fda0:2c53:696e:913d:13fd:62af:4e74:a087/64 scope global temporary dynamic 
     inet6 fda0:2c53:696e:913d:d096:10d4:9130:a00e/64 scope global dynamic mngtmpaddr noprefixroute 
     inet6 fe80::159b:ebe8:d5a3:75f9/64 scope link noprefixroute 
     inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
     inet 172.18.0.1/16 brd 172.18.255.255 scope global br-d0adf0a4debb
-    inet6 fe80::42:5aff:fe8b:3721/64 scope link 
-    inet6 fe80::7484:b8ff:fec7:225f/64 scope link 
+    inet6 fe80::42:d5ff:fed4:d1f3/64 scope link 
+    inet6 fe80::a8f0:2eff:fe0f:b650/64 scope link 
 
 default via 192.168.1.1 dev eno1 proto dhcp metric 100 
 default via 192.168.1.1 dev wlx78542e05b134 proto dhcp metric 600 
-169.254.0.0/16 dev eno1 scope link metric 1000 
+169.254.0.0/16 dev wlx78542e05b134 scope link metric 1000 
 172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 linkdown 
 172.18.0.0/16 dev br-d0adf0a4debb proto kernel scope link src 172.18.0.1 
 192.168.1.0/24 dev eno1 proto kernel scope link src 192.168.1.124 metric 100 
 192.168.1.0/24 dev wlx78542e05b134 proto kernel scope link src 192.168.1.169 metric 600 
 
-l          36437  0.0  0.0  10104  3968 pts/2    S+   May02   0:00 /bin/bash /home/l/bin/vvkeepRunSyncForm
-l         519753  0.0  0.0   9080  2560 pts/0    R+   10:39   0:00 grep vvkeep
+l           4274  0.0  0.0   9080  2560 pts/0    S+   10:42   0:00 grep vvkeep
 
-l         498749  0.0  0.3  38424 28328 pts/2    S+   10:05   0:00 /bin/python3 /home/l/bin/vvupdateFormToShorturl.py
-l         519755  0.0  0.0   9212  2560 pts/0    R+   10:39   0:00 grep vvupdate
+l           4276  0.0  0.0   9212  2560 pts/0    S+   10:42   0:00 grep vvupdate
 
-top - 10:39:28 up 13:13,  5 users,  load average: 0.26, 0.24, 0.14
-Tasks: 253 total,   1 running, 252 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  0.0 us,  1.5 sy,  0.0 ni, 98.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :   7729.8 total,   3799.6 free,    889.2 used,   3041.0 buff/cache
-MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6481.0 avail Mem 
+top - 10:42:37 up 0 min,  1 user,  load average: 1.64, 0.64, 0.23
+Tasks: 245 total,   1 running, 244 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  3.0 sy,  0.0 ni, 97.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7729.8 total,   5430.6 free,    555.6 used,   1743.6 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6923.1 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-      1 root      20   0  166968  11996   8412 S   0.0   0.2   0:17.02 systemd
-      2 root      20   0       0      0      0 S   0.0   0.0   0:00.03 kthreadd
+   4277 l         20   0   13080   4096   3328 R   6.2   0.1   0:00.01 top
+      1 root      20   0  166704  11992   8408 S   0.0   0.2   0:01.07 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
       4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
       5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
       6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      7 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker/0:0-cgroup_destroy
       8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+      9 root      20   0       0      0      0 I   0.0   0.0   0:00.02 kworker/0:1-events
+     10 root      20   0       0      0      0 I   0.0   0.0   0:00.36 kworker/u8:0-events_power_efficient
      11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
      12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_kthread
-     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
-     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
-     15 root      20   0       0      0      0 S   0.0   0.0   0:02.61 ksoftirqd/0
-     16 root      20   0       0      0      0 I   0.0   0.0   0:20.96 rcu_preempt
