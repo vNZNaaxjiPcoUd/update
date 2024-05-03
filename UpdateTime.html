@@ -1,43 +1,33 @@
-24/05/03 10:34:21
+24/05/03 10:35:30
 
 ll
 
-1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
-    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
     inet 127.0.0.1/8 scope host lo
-       valid_lft forever preferred_lft forever
     inet6 ::1/128 scope host 
-       valid_lft forever preferred_lft forever
-2: wlp0s20f3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
-    link/ether 90:65:84:a1:31:f5 brd ff:ff:ff:ff:ff:ff
     inet 192.168.1.108/24 brd 192.168.1.255 scope global dynamic noprefixroute wlp0s20f3
-       valid_lft 67265sec preferred_lft 67265sec
     inet6 fda0:2c53:696e:913d:ecd1:bb01:ec82:adf1/64 scope global temporary dynamic 
-       valid_lft 1704sec preferred_lft 1704sec
     inet6 fda0:2c53:696e:913d:44b0:bce6:8b83:4b1c/64 scope global temporary deprecated dynamic 
-       valid_lft 1704sec preferred_lft 0sec
     inet6 fda0:2c53:696e:913d:d5a:ff59:ea15:3278/64 scope global dynamic mngtmpaddr noprefixroute 
-       valid_lft 1704sec preferred_lft 1704sec
     inet6 fe80::4772:ca3c:63d9:bc84/64 scope link noprefixroute 
-       valid_lft forever preferred_lft forever
-3: virbr0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default qlen 1000
-    link/ether 52:54:00:94:42:19 brd ff:ff:ff:ff:ff:ff
     inet 192.168.122.1/24 brd 192.168.122.255 scope global virbr0
-       valid_lft forever preferred_lft forever
 
-l         810229  0.0  0.0   9584  2688 pts/3    S+   10:34   0:00 grep vvkeep
+default via 192.168.1.1 dev wlp0s20f3 proto dhcp metric 600 
+169.254.0.0/16 dev virbr0 scope link metric 1000 linkdown 
+192.168.1.0/24 dev wlp0s20f3 proto kernel scope link src 192.168.1.108 metric 600 
+192.168.122.0/24 dev virbr0 proto kernel scope link src 192.168.122.1 linkdown 
 
-l         810231  0.0  0.0   9584  2688 pts/3    S+   10:34   0:00 grep vvupdate
+l         810482  0.0  0.0   9584  2688 pts/3    S+   10:35   0:00 grep vvkeep
 
-top - 10:34:21 up 1 day, 15:40,  5 users,  load average: 0.27, 0.39, 0.31
+l         810484  0.0  0.0   9584  2688 pts/3    S+   10:35   0:00 grep vvupdate
+
+top - 10:35:31 up 1 day, 15:41,  5 users,  load average: 0.45, 0.42, 0.33
 Tasks: 427 total,   1 running, 425 sleeping,   1 stopped,   0 zombie
-%Cpu(s):  1.6 us,  1.1 sy,  0.0 ni, 97.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :  15669.7 total,   1928.5 free,   5315.3 used,   8425.9 buff/cache
-MiB Swap:   2048.0 total,   2047.7 free,      0.2 used.   8625.2 avail Mem 
+%Cpu(s):  1.6 us,  0.0 sy,  0.0 ni, 98.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :  15669.7 total,   1969.1 free,   5290.3 used,   8410.3 buff/cache
+MiB Swap:   2048.0 total,   2047.7 free,      0.2 used.   8666.0 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-  10280 l         20   0 1132.4g 159488 110700 S  13.3   1.0   0:20.41 chrome
-  13629 l         20   0 1682468 160256  60928 S   6.7   1.0  43:06.00 anytypeHelper
+   2696 l         20   0 7366068 438708 182512 S   6.7   2.7  18:17.56 gnome-shell
       1 root      20   0  168756  13152   7904 S   0.0   0.1   0:04.35 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.08 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
@@ -49,3 +39,4 @@ MiB Swap:   2048.0 total,   2047.7 free,      0.2 used.   8625.2 avail Mem
      12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_kthread
      13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
      14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     15 root      20   0       0      0      0 S   0.0   0.0   0:02.41 ksoftirqd/0
