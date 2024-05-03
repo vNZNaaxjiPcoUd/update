@@ -1,4 +1,4 @@
-24/05/03 10:26:22
+24/05/03 10:26:43
 
 ll
 
@@ -11,31 +11,31 @@ ll
 2: wlp0s20f3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
     link/ether 90:65:84:a1:31:f5 brd ff:ff:ff:ff:ff:ff
     inet 192.168.1.108/24 brd 192.168.1.255 scope global dynamic noprefixroute wlp0s20f3
-       valid_lft 67745sec preferred_lft 67745sec
+       valid_lft 67724sec preferred_lft 67724sec
     inet6 fda0:2c53:696e:913d:ecd1:bb01:ec82:adf1/64 scope global temporary dynamic 
-       valid_lft 1793sec preferred_lft 1793sec
+       valid_lft 1772sec preferred_lft 1772sec
     inet6 fda0:2c53:696e:913d:44b0:bce6:8b83:4b1c/64 scope global temporary deprecated dynamic 
-       valid_lft 1793sec preferred_lft 0sec
+       valid_lft 1772sec preferred_lft 0sec
     inet6 fda0:2c53:696e:913d:d5a:ff59:ea15:3278/64 scope global dynamic mngtmpaddr noprefixroute 
-       valid_lft 1793sec preferred_lft 1793sec
+       valid_lft 1772sec preferred_lft 1772sec
     inet6 fe80::4772:ca3c:63d9:bc84/64 scope link noprefixroute 
        valid_lft forever preferred_lft forever
 3: virbr0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default qlen 1000
     link/ether 52:54:00:94:42:19 brd ff:ff:ff:ff:ff:ff
     inet 192.168.122.1/24 brd 192.168.122.255 scope global virbr0
        valid_lft forever preferred_lft forever
-l         808391  0.0  0.0   9584  2688 pts/3    S+   10:26   0:00 grep vvkeep
-l         808393  0.0  0.0   9584  2688 pts/3    S+   10:26   0:00 grep vvupdate
-top - 10:26:22 up 1 day, 15:32,  5 users,  load average: 0.14, 0.23, 0.23
-Tasks: 422 total,   1 running, 420 sleeping,   1 stopped,   0 zombie
-%Cpu(s):  8.4 us,  0.5 sy,  0.0 ni, 91.1 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :  15669.7 total,   2391.5 free,   5028.3 used,   8250.0 buff/cache
-MiB Swap:   2048.0 total,   2047.7 free,      0.2 used.   9088.0 avail Mem 
+l         808492  0.0  0.0   9584  2688 pts/3    S+   10:26   0:00 grep vvkeep
+l         808494  0.0  0.0   9584  2688 pts/3    S+   10:26   0:00 grep vvupdate
+top - 10:26:43 up 1 day, 15:32,  5 users,  load average: 0.30, 0.26, 0.24
+Tasks: 423 total,   1 running, 421 sleeping,   1 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.5 sy,  0.0 ni, 99.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :  15669.7 total,   2273.6 free,   5063.7 used,   8332.4 buff/cache
+MiB Swap:   2048.0 total,   2047.7 free,      0.2 used.   8970.3 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
- 782231 l         20   0 1134.5g 236960 149308 S  93.8   1.5   6:42.12 chrome
- 799123 l         20   0 7352124 272288 142320 S  12.5   1.7   0:44.94 rustdesk
-      1 root      20   0  168756  13152   7904 S   0.0   0.1   0:04.34 systemd
+  13629 l         20   0 1682468 160256  60928 S  13.3   1.0  42:49.36 anytypeHelper
+ 799123 l         20   0 7352124 272032 142320 S   6.7   1.7   0:45.25 rustdesk
+      1 root      20   0  168756  13152   7904 S   0.0   0.1   0:04.35 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.08 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
       4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
@@ -46,8 +46,8 @@ MiB Swap:   2048.0 total,   2047.7 free,      0.2 used.   9088.0 avail Mem
      12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_kthread
      13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
      14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
-     15 root      20   0       0      0      0 S   0.0   0.0   0:02.39 ksoftirqd/0
-     16 root      20   0       0      0      0 I   0.0   0.0   1:50.09 rcu_preempt
+     15 root      20   0       0      0      0 S   0.0   0.0   0:02.40 ksoftirqd/0
+     16 root      20   0       0      0      0 I   0.0   0.0   1:50.12 rcu_preempt
      17 root      rt   0       0      0      0 S   0.0   0.0   0:03.96 migration/0
      18 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 idle_inject/0
      19 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0
@@ -112,7 +112,7 @@ MiB Swap:   2048.0 total,   2047.7 free,      0.2 used.   9088.0 avail Mem
      90 root      20   0       0      0      0 S   0.0   0.0   0:00.18 khungtaskd
      91 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_reaper
      93 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 writeback
-     94 root      20   0       0      0      0 S   0.0   0.0   0:10.55 kcompactd0
+     94 root      20   0       0      0      0 S   0.0   0.0   0:10.56 kcompactd0
      95 root      25   5       0      0      0 S   0.0   0.0   0:00.00 ksmd
      97 root      39  19       0      0      0 S   0.0   0.0   0:00.40 khugepaged
      98 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kintegrityd
@@ -125,7 +125,7 @@ MiB Swap:   2048.0 total,   2047.7 free,      0.2 used.   9088.0 avail Mem
     106 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 edac-poller
     107 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 devfreq_wq
     109 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 watchdogd
-    111 root       0 -20       0      0      0 I   0.0   0.0   0:01.24 kworker/4:1H-events_highpri
+    111 root       0 -20       0      0      0 I   0.0   0.0   0:01.24 kworker/4:1H-kblockd
     112 root      20   0       0      0      0 S   0.0   0.0   0:00.36 kswapd0
     113 root      20   0       0      0      0 S   0.0   0.0   0:00.00 ecryptfs-kthread
     114 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kthrotld
@@ -136,17 +136,17 @@ MiB Swap:   2048.0 total,   2047.7 free,      0.2 used.   9088.0 avail Mem
     120 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ipv6_addrconf
     136 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kstrp
     142 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 charger_manager
-    162 root       0 -20       0      0      0 I   0.0   0.0   0:01.33 kworker/2:1H-events_highpri
+    162 root       0 -20       0      0      0 I   0.0   0.0   0:01.34 kworker/2:1H-kblockd
     165 root       0 -20       0      0      0 I   0.0   0.0   0:00.53 kworker/3:1H-kblockd
-    167 root       0 -20       0      0      0 I   0.0   0.0   0:00.90 kworker/0:1H-kblockd
+    167 root       0 -20       0      0      0 I   0.0   0.0   0:00.90 kworker/0:1H-events_highpri
     184 root       0 -20       0      0      0 I   0.0   0.0   0:01.44 kworker/10:1H-kblockd
     185 root       0 -20       0      0      0 I   0.0   0.0   0:00.53 kworker/1:1H-kblockd
     186 root       0 -20       0      0      0 I   0.0   0.0   0:00.76 kworker/5:1H-events_highpri
     187 root       0 -20       0      0      0 I   0.0   0.0   0:00.68 kworker/9:1H-events_highpri
-    188 root       0 -20       0      0      0 I   0.0   0.0   0:00.70 kworker/6:1H-kblockd
-    189 root       0 -20       0      0      0 I   0.0   0.0   0:01.57 kworker/7:1H-kblockd
+    188 root       0 -20       0      0      0 I   0.0   0.0   0:00.71 kworker/6:1H-kblockd
+    189 root       0 -20       0      0      0 I   0.0   0.0   0:01.57 kworker/7:1H-events_highpri
     190 root       0 -20       0      0      0 I   0.0   0.0   0:01.24 kworker/11:1H-kblockd
-    191 root       0 -20       0      0      0 I   0.0   0.0   0:01.06 kworker/8:1H-events_highpri
+    191 root       0 -20       0      0      0 I   0.0   0.0   0:01.07 kworker/8:1H-events_highpri
     237 root     -51   0       0      0      0 S   0.0   0.0   0:19.66 irq/142-VEN_27C6:00
     257 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 irq/143-aerdrv
     259 root      20   0       0      0      0 S   0.0   0.0   0:00.00 scsi_eh_0
@@ -155,28 +155,28 @@ MiB Swap:   2048.0 total,   2047.7 free,      0.2 used.   9088.0 avail Mem
     262 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-reset-wq
     263 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-delete-wq
     264 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-auth-wq
-    305 root      20   0       0      0      0 S   0.0   0.0   0:07.01 jbd2/nvme0n1p2-8
+    305 root      20   0       0      0      0 S   0.0   0.0   0:07.02 jbd2/nvme0n1p2-8
     306 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ext4-rsv-conver
     350 root      19  -1  187304 102328 100864 S   0.0   0.6   0:03.46 systemd-journal
     423 root      20   0   27484   7040   4608 S   0.0   0.0   0:00.47 systemd-udevd
     535 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 irq/158-mei_me
     536 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 cfg80211
     586 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 cryptd
-    617 root     -51   0       0      0      0 S   0.0   0.0   0:54.01 irq/160-iwlwifi:default_queue
+    617 root     -51   0       0      0      0 S   0.0   0.0   0:54.02 irq/160-iwlwifi:default_queue
     618 root     -51   0       0      0      0 S   0.0   0.0   0:10.59 irq/161-iwlwifi:queue_1
-    619 root     -51   0       0      0      0 S   0.0   0.0   0:18.91 irq/162-iwlwifi:queue_2
-    620 root     -51   0       0      0      0 S   0.0   0.0   0:08.63 irq/163-iwlwifi:queue_3
-    621 root     -51   0       0      0      0 S   0.0   0.0   0:05.47 irq/164-iwlwifi:queue_4
+    619 root     -51   0       0      0      0 S   0.0   0.0   0:18.92 irq/162-iwlwifi:queue_2
+    620 root     -51   0       0      0      0 S   0.0   0.0   0:08.64 irq/163-iwlwifi:queue_3
+    621 root     -51   0       0      0      0 S   0.0   0.0   0:05.48 irq/164-iwlwifi:queue_4
     622 root     -51   0       0      0      0 S   0.0   0.0   0:04.96 irq/165-iwlwifi:queue_5
     623 root     -51   0       0      0      0 S   0.0   0.0   0:06.83 irq/166-iwlwifi:queue_6
     624 root     -51   0       0      0      0 S   0.0   0.0   0:04.52 irq/167-iwlwifi:queue_7
     625 root     -51   0       0      0      0 S   0.0   0.0   0:08.40 irq/168-iwlwifi:queue_8
     626 root     -51   0       0      0      0 S   0.0   0.0   0:09.91 irq/169-iwlwifi:queue_9
-    627 root     -51   0       0      0      0 S   0.0   0.0   0:04.57 irq/170-iwlwifi:queue_10
+    627 root     -51   0       0      0      0 S   0.0   0.0   0:04.58 irq/170-iwlwifi:queue_10
     628 root     -51   0       0      0      0 S   0.0   0.0   0:05.26 irq/171-iwlwifi:queue_11
     629 root     -51   0       0      0      0 S   0.0   0.0   0:09.93 irq/172-iwlwifi:queue_12
     631 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 irq/173-iwlwifi:exception
-    667 systemd+  20   0   14836   6784   6016 S   0.0   0.0   1:37.85 systemd-oomd
+    667 systemd+  20   0   14836   6784   6016 S   0.0   0.0   1:37.86 systemd-oomd
     680 systemd+  20   0   27528  14548   9088 S   0.0   0.1   0:05.21 systemd-resolve
     682 systemd+  20   0   89720   7168   6400 S   0.0   0.0   0:00.27 systemd-timesyn
     688 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ttm
@@ -186,22 +186,22 @@ MiB Swap:   2048.0 total,   2047.7 free,      0.2 used.   9088.0 avail Mem
     692 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 card0-crtc3
     794 root      20   0  241124   8132   7108 S   0.0   0.1   0:03.50 accounts-daemon
     795 root      20   0    2816   1792   1792 S   0.0   0.0   0:00.74 acpid
-    798 avahi     20   0    8248   3840   3456 S   0.0   0.0   0:42.83 avahi-daemon
+    798 avahi     20   0    8248   3840   3456 S   0.0   0.0   0:42.84 avahi-daemon
     800 root      20   0   10636   5248   4864 S   0.0   0.0   0:00.08 bluetoothd
     801 root      20   0    9852   2944   2816 S   0.0   0.0   0:00.23 cron
-    803 message+  20   0   11468   7040   4096 S   0.0   0.0   0:43.04 dbus-daemon
+    803 message+  20   0   11468   7040   4096 S   0.0   0.0   0:43.09 dbus-daemon
     804 root      20   0  262300  18472  15400 S   0.0   0.1   0:13.91 NetworkManager
     810 root      20   0   82852   3712   3456 S   0.0   0.0   0:05.85 irqbalance
     813 root      20   0   41504  20096  11392 S   0.0   0.1   0:00.09 networkd-dispat
-    815 root      20   0  244660  11960   7712 S   0.0   0.1   0:19.23 polkitd
+    815 root      20   0  244660  11960   7712 S   0.0   0.1   0:19.25 polkitd
     817 root      20   0  240708   7748   7236 S   0.0   0.0   0:00.04 power-profiles-
     820 syslog    20   0  222404   5120   4096 S   0.0   0.0   0:00.92 rsyslogd
     829 root      20   0 2060164  35880  20480 S   0.0   0.2   0:13.21 snapd
     832 root      20   0  236980   6528   6144 S   0.0   0.0   0:00.03 switcheroo-cont
     838 root      20   0   48248   7588   6528 S   0.0   0.0   0:05.96 systemd-logind
     839 root      20   0   14980   6784   6016 S   0.0   0.0   0:00.53 systemd-machine
-    840 root      20   0  276580  10624   9856 S   0.0   0.1   1:06.56 thermald
-    841 root      20   0  332392  14336  12544 S   0.0   0.1   0:15.60 touchegg
+    840 root      20   0  276580  10624   9856 S   0.0   0.1   1:06.57 thermald
+    841 root      20   0  332392  14336  12544 S   0.0   0.1   0:15.62 touchegg
     843 root      20   0  393704  12884  10324 S   0.0   0.1   0:00.40 udisksd
     853 root      20   0   17832  10752   9088 S   0.0   0.1   0:01.24 wpa_supplicant
     878 avahi     20   0    7444   1288   1024 S   0.0   0.0   0:00.00 avahi-daemon
@@ -225,7 +225,7 @@ MiB Swap:   2048.0 total,   2047.7 free,      0.2 used.   9088.0 avail Mem
    2377 root      20   0 1194692   8832   7296 S   0.0   0.1   0:00.18 charon
    2379 kernoops  20   0   13088   2072   1664 S   0.0   0.0   0:00.11 kerneloops
    2381 root      20   0    2900   1152   1024 S   0.0   0.0   0:00.00 xl2tpd
-   2403 root      20   0   87116  24448  21632 S   0.0   0.2   0:07.16 smbd
+   2403 root      20   0   87116  24448  21632 S   0.0   0.2   0:07.17 smbd
    2407 root      20   0   84964  10036   7296 S   0.0   0.1   0:00.28 smbd-notifyd
    2408 root      20   0   84972   8116   5376 S   0.0   0.1   0:00.28 cleanupd
    2409 root      20   0   86936  20864  18176 S   0.0   0.1   0:00.33 samba-bgqd
@@ -242,7 +242,7 @@ MiB Swap:   2048.0 total,   2047.7 free,      0.2 used.   9088.0 avail Mem
    2533 l         20   0  611276   7296   6912 S   0.0   0.0   0:00.15 xdg-document-po
    2542 l         20   0  236796   6272   6016 S   0.0   0.0   0:00.00 xdg-permission-
    2548 root      20   0    2796   1792   1792 S   0.0   0.0   0:00.00 fusermount3
-   2566 l         39  19 1771260 102056  25032 S   0.0   0.6   0:13.11 tracker-miner-f
+   2566 l         39  19 1771260 102056  25032 S   0.0   0.6   0:13.12 tracker-miner-f
    2587 root      10 -10       0      0      0 S   0.0   0.0   0:00.00 krfcommd
    2592 l         20   0  162908   6272   5888 S   0.0   0.0   0:00.00 gdm-wayland-ses
    2595 l         20   0  223560  16128  14336 S   0.0   0.1   0:00.01 gnome-session-b
@@ -253,7 +253,7 @@ MiB Swap:   2048.0 total,   2047.7 free,      0.2 used.   9088.0 avail Mem
    2678 l         20   0  315752   8064   7296 S   0.0   0.1   0:10.24 gvfs-afc-volume
    2690 l         20   0  237176   6656   6272 S   0.0   0.0   0:00.04 gvfs-goa-volume
    2691 l         20   0  309652   7424   6784 S   0.0   0.0   0:00.02 at-spi-bus-laun
-   2696 l         20   0 7366192 438976 182512 S   0.0   2.7  18:00.05 gnome-shell
+   2696 l         20   0 7366260 438844 182512 S   0.0   2.7  18:00.95 gnome-shell
    2699 l         20   0  582504  40576  33280 S   0.0   0.3   0:00.04 goa-daemon
    2706 l         20   0    8628   4096   3840 S   0.0   0.0   0:00.04 dbus-daemon
    2716 l         20   0  339056  15360  13568 S   0.0   0.1   0:00.38 goa-identity-se
@@ -268,7 +268,7 @@ MiB Swap:   2048.0 total,   2047.7 free,      0.2 used.   9088.0 avail Mem
    2808 l         20   0  162684   7296   6656 S   0.0   0.0   0:00.05 at-spi2-registr
    2831 l         20   0    2892   1536   1536 S   0.0   0.0   0:00.00 sh
    2832 l         20   0  311156   7296   6784 S   0.0   0.0   0:00.04 gsd-a11y-settin
-   2834 l         20   0  316196  13968   7296 S   0.0   0.1   0:20.31 ibus-daemon
+   2834 l         20   0  316196  13968   7296 S   0.0   0.1   0:20.34 ibus-daemon
    2835 l         20   0  548816  27648  21760 S   0.0   0.2   0:00.55 gsd-color
    2837 l         20   0  376196  16512  14720 S   0.0   0.1   0:00.05 gsd-datetime
    2839 l         20   0  313572   8960   7552 S   0.0   0.1   0:02.20 gsd-housekeepin
@@ -286,13 +286,13 @@ MiB Swap:   2048.0 total,   2047.7 free,      0.2 used.   9088.0 avail Mem
    2909 l         20   0  862712  72704  56320 S   0.0   0.5   0:00.39 evolution-alarm
    2919 l         20   0  237972   7552   7040 S   0.0   0.0   0:00.00 ibus-dconf
    2920 l         20   0  192600  13952  12544 S   0.0   0.1   0:00.01 touchegg
-   2921 l         20   0  348888  29820  18944 S   0.0   0.2   0:07.03 ibus-extension-
+   2921 l         20   0  348888  29820  18944 S   0.0   0.2   0:07.04 ibus-extension-
    2945 l         20   0  237872   7808   7168 S   0.0   0.0   0:00.11 ibus-portal
    2973 l         20   0  930076 198724  61652 S   0.0   1.2   0:08.90 snap-store
-   2995 l         20   0 1208904 112204  73712 S   0.0   0.7   6:09.08 Xwayland
+   2995 l         20   0 1215060 112204  73712 S   0.0   0.7   6:09.44 Xwayland
    3033 l         20   0  342924  15232  13440 S   0.0   0.1   0:00.02 gsd-printer
    3133 l         20   0  690004  13696  11776 S   0.0   0.1   0:03.51 xdg-desktop-por
-   3152 l         20   0  525408  30180  21708 S   0.0   0.2   0:00.55 xdg-desktop-por
+   3152 l         20   0  525408  30180  21708 S   0.0   0.2   0:00.56 xdg-desktop-por
    3173 l         20   0 3005660  27952  23040 S   0.0   0.2   0:00.09 gjs
    3192 l         20   0 1270140  81972  63100 S   0.0   0.5   0:00.30 gsd-xsettings
    3250 l         20   0  195208  25692  18544 S   0.0   0.2   0:00.12 ibus-x11
@@ -300,9 +300,9 @@ MiB Swap:   2048.0 total,   2047.7 free,      0.2 used.   9088.0 avail Mem
    3283 l         20   0  345356  25856  18560 S   0.0   0.2   0:00.30 xdg-desktop-por
    3320 l         20   0  429492  30092  21632 S   0.0   0.2   0:00.13 snapd-desktop-i
    3391 l         20   0  164024   7296   6400 S   0.0   0.0   0:00.01 gvfsd-metadata
-   3417 l         20   0  164256   7552   7040 S   0.0   0.0   0:02.83 ibus-engine-sim
+   3417 l         20   0  164256   7552   7040 S   0.0   0.0   0:02.85 ibus-engine-sim
    4851 l         20   0  534812  37680  28720 S   0.0   0.2   0:03.58 update-notifier
-   4899 l         20   0   33.0g 703360 330552 S   0.0   4.4  11:39.80 chrome
+   4899 l         20   0   33.0g 705856 333004 S   0.0   4.4  11:40.73 chrome
    4904 l         20   0    8868   2048   2048 S   0.0   0.0   0:00.00 cat
    4905 l         20   0    8868   2048   2048 S   0.0   0.0   0:00.00 cat
    4907 l         20   0   32.0g   3456   3200 S   0.0   0.0   0:00.01 chrome_crashpad
@@ -310,26 +310,25 @@ MiB Swap:   2048.0 total,   2047.7 free,      0.2 used.   9088.0 avail Mem
    4915 l         20   0   32.6g  58368  46208 S   0.0   0.4   0:00.01 chrome
    4916 l         20   0   32.6g  58368  46592 S   0.0   0.4   0:00.01 chrome
    4918 l         20   0   32.6g  16120   3968 S   0.0   0.1   0:01.22 chrome
-   4942 l         20   0   33.3g 291604 237792 S   0.0   1.8  34:23.69 chrome
-   4944 l         20   0   32.4g 167348 103508 S   0.0   1.0   6:54.66 chrome
-   4969 l         20   0   32.7g  65228  41864 S   0.0   0.4   0:14.36 chrome
-   5076 l         20   0 1132.3g 113732  87168 S   0.0   0.7   0:18.33 chrome
+   4942 l         20   0   33.4g 322512 268980 S   0.0   2.0  34:24.86 chrome
+   4944 l         20   0   32.4g 167656 103488 S   0.0   1.0   6:54.80 chrome
+   4969 l         20   0   32.7g  65484  41992 S   0.0   0.4   0:14.36 chrome
+   5076 l         20   0 1132.3g 114244  87168 S   0.0   0.7   0:18.35 chrome
    5205 l         20   0   32.6g  80572  67396 S   0.0   0.5   0:32.43 chrome
    9934 l         20   0  282240  11904  10624 S   0.0   0.1   0:00.00 gvfsd-http
-  10280 l         20   0 1132.3g 123976  94464 S   0.0   0.8   0:02.60 chrome
+  10280 l         20   0 1132.3g 123976  94464 S   0.0   0.8   0:02.61 chrome
   10702 l         20   0  389432   9088   8192 S   0.0   0.1   0:00.04 gvfsd-network
-  10721 l         20   0  317500   9088   8192 S   0.0   0.1   0:06.64 gvfsd-dnssd
-  11497 l         20   0 1134.5g 252292 130304 S   0.0   1.6   4:22.82 chrome
+  10721 l         20   0  317500   9088   8192 S   0.0   0.1   0:06.65 gvfsd-dnssd
+  11497 l         20   0 1136.6g 251652 130432 S   0.0   1.6   4:23.06 chrome
   13182 l         20   0 1132.4g 184236 141640 S   0.0   1.1   0:16.01 chrome
-  13332 l         20   0  651208  85132  67692 S   0.0   0.5   0:13.66 gnome-terminal-
+  13332 l         20   0  651208  85132  67692 S   0.0   0.5   0:13.71 gnome-terminal-
   13390 l         20   0   14176   8064   4224 S   0.0   0.1   0:00.03 bash
-  13485 l         20   0 1131.4g 179152 132856 S   0.0   1.1   0:15.65 anytype
+  13485 l         20   0 1131.4g 179152 132856 S   0.0   1.1   0:15.66 anytype
   13489 l         20   0   32.5g  51200  42496 S   0.0   0.3   0:00.01 anytype
   13490 l         20   0   32.5g  51328  42752 S   0.0   0.3   0:00.01 anytype
   13492 l         20   0   32.5g  10648   1920 S   0.0   0.1   0:00.00 anytype
-  13613 l         20   0   33.0g 145148 102272 S   0.0   0.9   0:16.62 anytype
+  13613 l         20   0   33.0g 145148 102272 S   0.0   0.9   0:16.63 anytype
   13616 l         20   0   32.3g  70716  61312 S   0.0   0.4   0:05.68 anytype
-  13629 l         20   0 1682468 160256  60928 S   0.0   1.0  42:48.89 anytypeHelper
   13647 l         20   0 1131.5g 242952 131008 S   0.0   1.5   0:35.58 anytype
   13848 l         20   0 1132.4g 147812 123032 S   0.0   0.9   0:09.73 chrome
   13981 l         20   0 1134.4g 196720 127888 S   0.0   1.2   0:06.51 chrome
@@ -376,54 +375,55 @@ MiB Swap:   2048.0 total,   2047.7 free,      0.2 used.   9088.0 avail Mem
   15334 l         20   0 1132.3g 111056  89344 S   0.0   0.7   0:01.00 chrome
   15364 l         20   0 1146.8g 150904  98352 S   0.0   0.9   0:04.03 chrome
   15417 l         20   0 1132.3g 113952  91136 S   0.0   0.7   0:01.02 chrome
-  15555 l         20   0 1134.5g 292128 149008 S   0.0   1.8   1:01.33 chrome
+  15555 l         20   0 1134.5g 292128 149008 S   0.0   1.8   1:01.34 chrome
   15811 l         20   0 1132.3g 110292  89600 S   0.0   0.7   0:00.96 chrome
   15830 l         20   0   40.7g  42804  29568 S   0.0   0.3   0:03.12 chrome
   15865 l         20   0 1132.3g 108696  89600 S   0.0   0.7   0:00.91 chrome
-  15889 l         20   0 1132.3g 110592  91264 S   0.0   0.7   0:01.01 chrome
+  15889 l         20   0 1132.3g 110592  91264 S   0.0   0.7   0:01.02 chrome
   15943 l         20   0 1132.3g 106908  88320 S   0.0   0.7   0:00.84 chrome
   16172 l         20   0   13880   7936   3968 S   0.0   0.0   0:00.05 bash
-  16216 l         20   0    7980   5504   4480 S   0.0   0.0   0:00.08 ssh-agent
+  16216 l         20   0    7980   5504   4480 S   0.0   0.0   0:00.09 ssh-agent
   16526 root      20   0   14376   5760   5120 T   0.0   0.0   0:00.00 sudo
- 339963 l         20   0 1132.4g 149292 103772 S   0.0   0.9   0:49.11 chrome
- 412635 l         20   0 1134.5g 402940 154804 S   0.0   2.5  21:20.07 chrome
- 419900 l         20   0 1132.5g 361980 139436 S   0.0   2.3   2:01.23 chrome
+ 339963 l         20   0 1132.4g 149292 103772 S   0.0   0.9   0:49.15 chrome
+ 412635 l         20   0 1132.5g 386680 154804 S   0.0   2.4  21:20.55 chrome
+ 419900 l         20   0 1132.5g 360636 139436 S   0.0   2.2   2:01.26 chrome
  464253 l         20   0 1134.4g 162376 104288 S   0.0   1.0   0:03.21 chrome
+ 782231 l         20   0 1134.5g 236960 149308 S   0.0   1.5   6:42.12 chrome
  782240 l         20   0 1132.3g 112472  91520 S   0.0   0.7   0:00.84 chrome
  782298 l         20   0 1132.3g 185212 129284 S   0.0   1.2   0:08.03 chrome
- 782519 root      20   0       0      0      0 I   0.0   0.0   0:04.08 kworker/7:1-i915-unordered
+ 782519 root      20   0       0      0      0 I   0.0   0.0   0:04.10 kworker/7:1-mm_percpu_wq
  782862 l         20   0 1132.4g 154276 120396 S   0.0   1.0   0:05.50 chrome
  785635 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/7:2-events
- 787666 l         20   0 1132.4g 217484 138256 S   0.0   1.4   0:26.99 chrome
+ 787666 l         20   0 1132.4g 285980 150736 S   0.0   1.8   0:29.00 chrome
  789434 l         20   0 1132.4g 204604 130900 S   0.0   1.3   0:10.23 chrome
- 794260 root      20   0       0      0      0 I   0.0   0.0   0:22.00 kworker/2:1-events
+ 794260 root      20   0       0      0      0 I   0.0   0.0   0:22.00 kworker/2:1-mm_percpu_wq
  794774 root      20   0   73408  13696  11776 S   0.0   0.1   0:00.04 cupsd
  794831 root      20   0  173684  13952  11776 S   0.0   0.1   0:00.98 cups-browsed
  794837 lp        20   0   16288   6400   5632 S   0.0   0.0   0:00.00 dbus
  794838 lp        20   0   16288   6400   5632 S   0.0   0.0   0:00.00 dbus
  796698 root      20   0       0      0      0 I   0.0   0.0   0:00.35 kworker/10:0-events
  797319 root      20   0       0      0      0 I   0.0   0.0   0:00.44 kworker/8:3-events
- 798301 root      20   0       0      0      0 I   0.0   0.0   0:00.45 kworker/3:0-events
+ 798301 root      20   0       0      0      0 I   0.0   0.0   0:00.45 kworker/3:0-mm_percpu_wq
  798425 root      20   0       0      0      0 I   0.0   0.0   0:00.37 kworker/9:0-mm_percpu_wq
  798703 root      20   0       0      0      0 I   0.0   0.0   0:00.03 kworker/6:0-events
- 798726 root      20   0       0      0      0 I   0.0   0.0   0:01.24 kworker/u24:4-events_unbound
- 798741 root       0 -20       0      0      0 I   0.0   0.0   0:01.36 kworker/u25:2-i915_flip
+ 798726 root      20   0       0      0      0 I   0.0   0.0   0:01.27 kworker/u24:4-events_power_efficient
+ 798741 root       0 -20       0      0      0 I   0.0   0.0   0:01.39 kworker/u25:2-i915_flip
  798801 root      20   0       0      0      0 I   0.0   0.0   0:00.66 kworker/5:2-events
  798833 root      20   0       0      0      0 I   0.0   0.0   0:00.23 kworker/2:0-events
- 798834 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker/5:0-mm_percpu_wq
- 798935 l         20   0 3181720  80596  62188 S   0.0   0.5   0:05.24 gjs
- 798998 root       5 -15       0      0      0 S   0.0   0.0   0:00.42 khidpd_046db016
- 799396 root      20   0       0      0      0 I   0.0   0.0   0:00.11 kworker/10:1-events
+ 798834 root      20   0       0      0      0 I   0.0   0.0   0:00.02 kworker/5:0-mm_percpu_wq
+ 798935 l         20   0 3181732  80596  62188 S   0.0   0.5   0:05.28 gjs
+ 798998 root       5 -15       0      0      0 S   0.0   0.0   0:00.43 khidpd_046db016
+ 799396 root      20   0       0      0      0 I   0.0   0.0   0:00.11 kworker/10:1-mm_percpu_wq
  799586 l         20   0 1132.4g 184352 135136 S   0.0   1.1   0:01.33 chrome
- 800480 root      20   0       0      0      0 I   0.0   0.0   0:00.08 kworker/4:2-mm_percpu_wq
+ 800480 root      20   0       0      0      0 I   0.0   0.0   0:00.08 kworker/4:2-events
  801844 root      20   0    3212   1664   1664 S   0.0   0.0   0:00.00 sleep
  802187 root      20   0       0      0      0 I   0.0   0.0   0:00.06 kworker/11:2-mm_percpu_wq
  802434 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0-pm
  802595 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/8:1
- 803096 root       0 -20       0      0      0 I   0.0   0.0   0:00.76 kworker/u25:0-rb_allocator
+ 803096 root       0 -20       0      0      0 I   0.0   0.0   0:00.79 kworker/u25:0-i915_flip
  803871 root      20   0       0      0      0 I   0.0   0.0   0:00.19 kworker/0:2-usb_hub_wq
- 804011 root      20   0       0      0      0 I   0.0   0.0   0:00.08 kworker/1:1-events
- 804131 l         20   0 1132.4g 186700 130336 S   0.0   1.2   0:05.91 chrome
+ 804011 root      20   0       0      0      0 I   0.0   0.0   0:00.08 kworker/1:1-mm_percpu_wq
+ 804131 l         20   0 1132.4g 187820 130324 S   0.0   1.2   0:05.99 chrome
  804333 root      20   0       0      0      0 I   0.0   0.0   0:00.46 kworker/u24:0-flush-259:0
  804741 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/4:1-events
  805410 l         20   0   11272   3968   3456 S   0.0   0.0   0:00.00 tmux: client
@@ -435,23 +435,24 @@ MiB Swap:   2048.0 total,   2047.7 free,      0.2 used.   9088.0 avail Mem
  806072 l         20   0    9528   3200   2688 S   0.0   0.0   0:00.05 pager
  806161 root      20   0       0      0      0 I   0.0   0.0   0:00.02 kworker/11:3-events
  806169 l         20   0   14048   8064   4096 S   0.0   0.1   0:00.02 bash
- 806558 root      20   0       0      0      0 I   0.0   0.0   0:00.13 kworker/0:3-events
+ 806558 root      20   0       0      0      0 I   0.0   0.0   0:00.14 kworker/0:3-events
  806562 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/1:0-mm_percpu_wq
  806563 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/u25:3-hci0
  806564 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/9:1-mm_percpu_wq
  806772 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/3:2-events
- 806914 root      20   0       0      0      0 I   0.0   0.0   0:00.20 kworker/u24:1-events_unbound
- 806982 root      20   0       0      0      0 I   0.0   0.0   0:00.03 kworker/6:1-i915-unordered
+ 806914 root      20   0       0      0      0 I   0.0   0.0   0:00.24 kworker/u24:1-events_unbound
+ 806982 root      20   0       0      0      0 I   0.0   0.0   0:00.03 kworker/6:1-mm_percpu_wq
  807272 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/11:0-events
- 807431 l         20   0 1138.6g 249396 145528 S   0.0   1.6   0:07.01 chrome
+ 807431 l         20   0 1132.4g 231288 135020 S   0.0   1.4   0:07.14 chrome
  807460 l         20   0   40.6g  45232  32384 S   0.0   0.3   0:00.01 chrome
  807489 l         20   0 1132.3g  66316  51200 S   0.0   0.4   0:00.01 chrome
  807614 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/u25:1-hci0
- 807621 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker/11:1-events
+ 807621 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker/11:1-mm_percpu_wq
  807637 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/8:0
  807647 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/0:1-events
  808172 root      20   0       0      0      0 I   0.0   0.0   0:00.02 kworker/u24:2-events_unbound
  808203 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/5:1-events
  808238 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/9:2
- 808385 l         20   0   10460   3968   3584 S   0.0   0.0   0:00.00 vvping
- 808394 l         20   0   13700   4352   3456 R   0.0   0.0   0:00.00 top
+ 808436 l         20   0 1132.3g 108580  88448 S   0.0   0.7   0:00.04 chrome
+ 808486 l         20   0   10460   3968   3584 S   0.0   0.0   0:00.00 vvping
+ 808495 l         20   0   13700   4352   3456 R   0.0   0.0   0:00.00 top
