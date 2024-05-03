@@ -1,35 +1,45 @@
-24/05/03 10:39:05
+24/05/03 10:39:28
 
-ll
+l
 
     inet 127.0.0.1/8 scope host lo
     inet6 ::1/128 scope host 
-    inet 192.168.1.108/24 brd 192.168.1.255 scope global dynamic noprefixroute wlp0s20f3
-    inet6 fda0:2c53:696e:913d:ecd1:bb01:ec82:adf1/64 scope global temporary dynamic 
-    inet6 fda0:2c53:696e:913d:44b0:bce6:8b83:4b1c/64 scope global temporary deprecated dynamic 
-    inet6 fda0:2c53:696e:913d:d5a:ff59:ea15:3278/64 scope global dynamic mngtmpaddr noprefixroute 
-    inet6 fe80::4772:ca3c:63d9:bc84/64 scope link noprefixroute 
-    inet 192.168.122.1/24 brd 192.168.122.255 scope global virbr0
+    inet 192.168.1.124/24 brd 192.168.1.255 scope global dynamic noprefixroute eno1
+    inet6 fda0:2c53:696e:913d:e154:7e22:da0c:67d2/64 scope global temporary dynamic 
+    inet6 fda0:2c53:696e:913d:bd4:7684:e45b:9c4/64 scope global dynamic mngtmpaddr noprefixroute 
+    inet6 fe80::9c09:7848:b980:c11/64 scope link noprefixroute 
+    inet 192.168.1.169/24 brd 192.168.1.255 scope global dynamic noprefixroute wlx78542e05b134
+    inet6 fda0:2c53:696e:913d:78c9:bd32:72a4:9f90/64 scope global temporary dynamic 
+    inet6 fda0:2c53:696e:913d:d096:10d4:9130:a00e/64 scope global dynamic mngtmpaddr noprefixroute 
+    inet6 fe80::159b:ebe8:d5a3:75f9/64 scope link noprefixroute 
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-d0adf0a4debb
+    inet6 fe80::42:5aff:fe8b:3721/64 scope link 
+    inet6 fe80::7484:b8ff:fec7:225f/64 scope link 
 
-default via 192.168.1.1 dev wlp0s20f3 proto dhcp metric 600 
-169.254.0.0/16 dev virbr0 scope link metric 1000 linkdown 
-192.168.1.0/24 dev wlp0s20f3 proto kernel scope link src 192.168.1.108 metric 600 
-192.168.122.0/24 dev virbr0 proto kernel scope link src 192.168.122.1 linkdown 
+default via 192.168.1.1 dev eno1 proto dhcp metric 100 
+default via 192.168.1.1 dev wlx78542e05b134 proto dhcp metric 600 
+169.254.0.0/16 dev eno1 scope link metric 1000 
+172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 linkdown 
+172.18.0.0/16 dev br-d0adf0a4debb proto kernel scope link src 172.18.0.1 
+192.168.1.0/24 dev eno1 proto kernel scope link src 192.168.1.124 metric 100 
+192.168.1.0/24 dev wlx78542e05b134 proto kernel scope link src 192.168.1.169 metric 600 
 
-l         811238  0.0  0.0   9584  2688 pts/3    S+   10:39   0:00 grep vvkeep
+l          36437  0.0  0.0  10104  3968 pts/2    S+   May02   0:00 /bin/bash /home/l/bin/vvkeepRunSyncForm
+l         519753  0.0  0.0   9080  2560 pts/0    R+   10:39   0:00 grep vvkeep
 
-l         811240  0.0  0.0   9584  2688 pts/3    S+   10:39   0:00 grep vvupdate
+l         498749  0.0  0.3  38424 28328 pts/2    S+   10:05   0:00 /bin/python3 /home/l/bin/vvupdateFormToShorturl.py
+l         519755  0.0  0.0   9212  2560 pts/0    R+   10:39   0:00 grep vvupdate
 
-top - 10:39:05 up 1 day, 15:44,  5 users,  load average: 0.33, 0.37, 0.32
-Tasks: 425 total,   1 running, 423 sleeping,   1 stopped,   0 zombie
-%Cpu(s):  0.5 us,  1.1 sy,  0.0 ni, 98.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :  15669.7 total,   2038.1 free,   5260.3 used,   8371.3 buff/cache
-MiB Swap:   2048.0 total,   2047.7 free,      0.2 used.   8739.1 avail Mem 
+top - 10:39:28 up 13:13,  5 users,  load average: 0.26, 0.24, 0.14
+Tasks: 253 total,   1 running, 252 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  1.5 sy,  0.0 ni, 98.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7729.8 total,   3799.6 free,    889.2 used,   3041.0 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6481.0 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-  13629 l         20   0 1682468 160256  60928 S   6.2   1.0  43:17.99 anytypeHelper
-      1 root      20   0  168756  13152   7904 S   0.0   0.1   0:04.36 systemd
-      2 root      20   0       0      0      0 S   0.0   0.0   0:00.08 kthreadd
+      1 root      20   0  166968  11996   8412 S   0.0   0.2   0:17.02 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.03 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
       4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
       5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
@@ -39,4 +49,5 @@ MiB Swap:   2048.0 total,   2047.7 free,      0.2 used.   8739.1 avail Mem
      12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_kthread
      13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
      14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
-     15 root      20   0       0      0      0 S   0.0   0.0   0:02.42 ksoftirqd/0
+     15 root      20   0       0      0      0 S   0.0   0.0   0:02.61 ksoftirqd/0
+     16 root      20   0       0      0      0 I   0.0   0.0   0:20.96 rcu_preempt
