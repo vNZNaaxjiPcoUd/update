@@ -1,4 +1,4 @@
-24/05/03 10:42:37
+24/05/03 10:43:37
 
 l
 
@@ -25,27 +25,29 @@ default via 192.168.1.1 dev wlx78542e05b134 proto dhcp metric 600
 192.168.1.0/24 dev eno1 proto kernel scope link src 192.168.1.124 metric 100 
 192.168.1.0/24 dev wlx78542e05b134 proto kernel scope link src 192.168.1.169 metric 600 
 
-l           4274  0.0  0.0   9080  2560 pts/0    S+   10:42   0:00 grep vvkeep
+l           4933  0.0  0.0  10104  3840 pts/1    S+   10:43   0:00 /bin/bash /home/l/bin/vvkeepRunSyncForm
+l           4952  0.0  0.0   9080  2560 pts/1    S+   10:43   0:00 grep vvkeep
 
-l           4276  0.0  0.0   9212  2560 pts/0    S+   10:42   0:00 grep vvupdate
+l           4942  0.0  0.3  34904 23888 pts/1    S+   10:43   0:00 /bin/python3 /home/l/bin/vvupdateFormToShorturl.py
+l           4954  0.0  0.0   9212  2560 pts/1    S+   10:43   0:00 grep vvupdate
 
-top - 10:42:37 up 0 min,  1 user,  load average: 1.64, 0.64, 0.23
-Tasks: 245 total,   1 running, 244 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  0.0 us,  3.0 sy,  0.0 ni, 97.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :   7729.8 total,   5430.6 free,    555.6 used,   1743.6 buff/cache
-MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6923.1 avail Mem 
+top - 10:43:38 up 1 min,  2 users,  load average: 0.66, 0.53, 0.22
+Tasks: 250 total,   1 running, 249 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7729.8 total,   5390.3 free,    582.3 used,   1757.2 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6895.9 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-   4277 l         20   0   13080   4096   3328 R   6.2   0.1   0:00.01 top
-      1 root      20   0  166704  11992   8408 S   0.0   0.2   0:01.07 systemd
+   4955 l         20   0   13216   4096   3328 R   6.2   0.1   0:00.01 top
+      1 root      20   0  166704  11992   8408 S   0.0   0.2   0:01.09 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
-      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
-      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_fl+
       6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
-      7 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker/0:0-cgroup_destroy
-      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
-      9 root      20   0       0      0      0 I   0.0   0.0   0:00.02 kworker/0:1-events
-     10 root      20   0       0      0      0 I   0.0   0.0   0:00.36 kworker/u8:0-events_power_efficient
-     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
-     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_kthread
+      7 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker+
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      9 root      20   0       0      0      0 I   0.0   0.0   0:00.03 kworker+
+     10 root      20   0       0      0      0 I   0.0   0.0   0:00.36 kworker+
+     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_perc+
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+
