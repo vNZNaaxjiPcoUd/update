@@ -1,4 +1,4 @@
-24/05/04 10:36:39
+24/05/04 11:09:32
 
 l
 
@@ -9,7 +9,8 @@ l
     inet6 fda0:2c53:696e:913d:bd4:7684:e45b:9c4/64 scope global dynamic mngtmpaddr noprefixroute 
     inet6 fe80::9c09:7848:b980:c11/64 scope link noprefixroute 
     inet 192.168.1.169/24 brd 192.168.1.255 scope global dynamic noprefixroute wlx78542e05b134
-    inet6 fda0:2c53:696e:913d:13fd:62af:4e74:a087/64 scope global temporary dynamic 
+    inet6 fda0:2c53:696e:913d:ca64:ce2:5af3:6369/64 scope global temporary dynamic 
+    inet6 fda0:2c53:696e:913d:13fd:62af:4e74:a087/64 scope global temporary deprecated dynamic 
     inet6 fda0:2c53:696e:913d:d096:10d4:9130:a00e/64 scope global dynamic mngtmpaddr noprefixroute 
     inet6 fe80::159b:ebe8:d5a3:75f9/64 scope link noprefixroute 
     inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
@@ -26,20 +27,21 @@ default via 192.168.1.1 dev wlx78542e05b134 proto dhcp metric 600
 192.168.1.0/24 dev wlx78542e05b134 proto kernel scope link src 192.168.1.169 metric 600 
 
 l           4933  0.0  0.0  10104  3840 pts/1    S+   May03   0:00 /bin/bash /home/l/bin/vvkeepRunSyncForm
-l         866749  0.0  0.0   9212  2560 pts/1    S+   10:36   0:00 grep vvkeep
+l         886533  0.0  0.0   9212  2560 pts/1    S+   11:09   0:00 grep vvkeep
 
-l         847050  0.0  0.3  38424 28452 pts/1    S+   10:03   0:00 /bin/python3 /home/l/bin/vvupdateFormToShorturl.py
-l         866751  0.0  0.0   9212  2560 pts/1    S+   10:36   0:00 grep vvupdate
+l         847050  0.0  0.3  39100 29092 pts/1    S+   10:03   0:00 /bin/python3 /home/l/bin/vvupdateFormToShorturl.py
+l         886535  0.0  0.0   9212  2560 pts/1    S+   11:09   0:00 grep vvupdate
 
-top - 10:36:39 up 23:54,  2 users,  load average: 0.21, 0.13, 0.10
-Tasks: 234 total,   1 running, 233 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  3.0 us,  1.5 sy,  0.0 ni, 95.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :   7729.8 total,   4844.7 free,    593.2 used,   2291.9 buff/cache
-MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6870.4 avail Mem 
+top - 11:09:32 up 1 day, 27 min,  2 users,  load average: 0.02, 0.09, 0.08
+Tasks: 232 total,   1 running, 231 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.6 us, 12.7 sy,  0.0 ni, 85.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7729.8 total,   4847.7 free,    588.2 used,   2293.9 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6875.3 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
- 866752 l         20   0   13080   4096   3328 R   6.7   0.1   0:00.01 top
-      1 root      20   0  166852  12120   8408 S   0.0   0.2   0:43.04 systemd
+ 868401 root      20   0       0      0      0 I  33.3   0.0   0:04.85 kworker+
+ 886536 l         20   0   13080   4096   3328 R   6.7   0.1   0:00.01 top
+      1 root      20   0  166852  12120   8408 S   0.0   0.2   0:44.00 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.04 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
       4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par+
@@ -50,4 +52,3 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6870.4 avail Mem
      12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+
      13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+
      14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+
-     15 root      20   0       0      0      0 S   0.0   0.0   0:03.38 ksoftir+
