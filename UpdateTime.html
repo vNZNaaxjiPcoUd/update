@@ -1,15 +1,12 @@
-24/05/07 09:49:11
+24/05/07 10:30:24
 
 l
 
     inet 127.0.0.1/8 scope host lo
     inet6 ::1/128 scope host 
-    inet 192.168.1.124/24 brd 192.168.1.255 scope global dynamic noprefixroute eno1
-    inet6 fda0:2c53:696e:913d:475:7e06:3b44:4366/64 scope global temporary dynamic 
-    inet6 fda0:2c53:696e:913d:bd4:7684:e45b:9c4/64 scope global dynamic mngtmpaddr noprefixroute 
-    inet6 fe80::9c09:7848:b980:c11/64 scope link noprefixroute 
     inet 192.168.1.169/24 brd 192.168.1.255 scope global dynamic noprefixroute wlx78542e05b134
-    inet6 fda0:2c53:696e:913d:4426:6278:e64f:3885/64 scope global temporary dynamic 
+    inet6 fda0:2c53:696e:913d:d2c0:238:a9d1:1abd/64 scope global temporary dynamic 
+    inet6 fda0:2c53:696e:913d:4426:6278:e64f:3885/64 scope global temporary deprecated dynamic 
     inet6 fda0:2c53:696e:913d:c561:42b9:a1ee:1eb9/64 scope global temporary deprecated dynamic 
     inet6 fda0:2c53:696e:913d:ca64:ce2:5af3:6369/64 scope global temporary deprecated dynamic 
     inet6 fda0:2c53:696e:913d:13fd:62af:4e74:a087/64 scope global temporary deprecated dynamic 
@@ -20,29 +17,27 @@ l
     inet6 fe80::42:d5ff:fed4:d1f3/64 scope link 
     inet6 fe80::a8f0:2eff:fe0f:b650/64 scope link 
 
-default via 192.168.1.1 dev eno1 proto dhcp metric 100 
 default via 192.168.1.1 dev wlx78542e05b134 proto dhcp metric 600 
 169.254.0.0/16 dev wlx78542e05b134 scope link metric 1000 
 172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 linkdown 
 172.18.0.0/16 dev br-d0adf0a4debb proto kernel scope link src 172.18.0.1 
-192.168.1.0/24 dev eno1 proto kernel scope link src 192.168.1.124 metric 100 
 192.168.1.0/24 dev wlx78542e05b134 proto kernel scope link src 192.168.1.169 metric 600 
 
 l           4933  0.0  0.0  10104  3840 pts/1    S+   May03   0:02 /bin/bash /home/l/bin/vvkeepRunSyncForm
-l        3436439  0.0  0.0   9212  2560 pts/1    S+   09:49   0:00 grep vvkeep
+l        3461321  0.0  0.0   9212  2560 pts/1    S+   10:30   0:00 grep vvkeep
 
-l        3082089  0.0  0.3  39248 29348 pts/1    S+   00:00   0:04 /bin/python3 /home/l/bin/vvupdateFormToShorturl.py
-l        3436441  0.0  0.0   9212  2560 pts/1    S+   09:49   0:00 grep vvupdate
+l        3461309  0.0  0.3  35928 24100 pts/1    S+   10:30   0:00 /bin/python3 /home/l/bin/vvupdateFormToShorturl.py
+l        3461323  0.0  0.0   9212  2560 pts/1    S+   10:30   0:00 grep vvupdate
 
-top - 09:49:12 up 3 days, 23:07,  2 users,  load average: 0.07, 0.11, 0.09
-Tasks: 233 total,   2 running, 231 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  1.5 us,  1.5 sy,  0.0 ni, 97.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :   7729.8 total,   4609.9 free,    603.7 used,   2516.2 buff/cache
-MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6851.1 avail Mem 
+top - 10:30:25 up 3 days, 23:48,  2 users,  load average: 0.04, 0.05, 0.04
+Tasks: 235 total,   1 running, 234 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.5 us,  6.1 sy,  0.0 ni, 92.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7729.8 total,   4604.0 free,    599.9 used,   2525.9 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6854.9 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-3436442 l         20   0   13080   4096   3328 R   6.7   0.1   0:00.01 top
-      1 root      20   0  166992  12120   8408 S   0.0   0.2   2:47.37 systemd
+3461324 l         20   0   13080   3968   3328 R   6.2   0.1   0:00.01 top
+      1 root      20   0  166992  12120   8408 S   0.0   0.2   2:48.56 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.18 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
       4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par+
@@ -53,4 +48,4 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6851.1 avail Mem
      12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+
      13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+
      14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+
-     15 root      20   0       0      0      0 S   0.0   0.0   0:13.14 ksoftir+
+     15 root      20   0       0      0      0 S   0.0   0.0   0:13.24 ksoftir+
