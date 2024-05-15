@@ -1,4 +1,4 @@
-24/05/15 05:46:19
+24/05/15 06:19:10
 
 l
 
@@ -26,19 +26,21 @@ default via 192.168.1.1 dev wlx78542e05b134 proto dhcp metric 600
 192.168.1.0/24 dev wlx78542e05b134 proto kernel scope link src 192.168.1.169 metric 600 
 
 l           4933  0.0  0.0  10104  3840 pts/1    S+   May03   0:06 /bin/bash /home/l/bin/vvkeepRunSyncForm
-l        1831906  0.0  0.0   9212  2560 pts/1    S+   05:46   0:00 grep vvkeep
+l        1851664  0.0  0.0   9212  2560 pts/1    S+   06:19   0:00 grep vvkeep
 
-l        1831908  0.0  0.0   9212  2560 pts/1    S+   05:46   0:00 grep vvupdate
+l        1851666  0.0  0.0   9212  2560 pts/1    S+   06:19   0:00 grep vvupdate
 l        3955198  0.0  0.3  39356 29604 pts/1    S+   May08   1:19 /bin/python3 /home/l/bin/vvupdateFormToShorturl.py
 
-top - 05:46:19 up 11 days, 19:04,  3 users,  load average: 0.03, 0.06, 0.01
+top - 06:19:10 up 11 days, 19:37,  3 users,  load average: 0.20, 0.13, 0.09
 Tasks: 234 total,   1 running, 233 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :   7729.8 total,   3970.6 free,    611.7 used,   3147.4 buff/cache
-MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6821.6 avail Mem 
+%Cpu(s):  1.5 us,  3.0 sy,  0.0 ni, 95.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7729.8 total,   3969.2 free,    612.7 used,   3147.8 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6820.5 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-      1 root      20   0  168332  13528   8408 S   0.0   0.2   8:16.02 systemd
+1833033 root      20   0 1881904  38244  30464 S   6.2   0.5   0:08.01 rustdesk
+1851667 l         20   0   13080   4096   3328 R   6.2   0.1   0:00.01 top
+      1 root      20   0  168332  13528   8408 S   0.0   0.2   8:16.95 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.56 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
       4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par+
@@ -49,5 +51,3 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6821.6 avail Mem
      12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+
      13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+
      14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+
-     15 root      20   0       0      0      0 S   0.0   0.0   0:38.58 ksoftir+
-     16 root      20   0       0      0      0 I   0.0   0.0   6:41.77 rcu_pre+
