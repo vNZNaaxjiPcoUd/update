@@ -1,4 +1,4 @@
-24/05/30 18:33:09
+24/05/30 19:05:58
 
 l
 
@@ -19,19 +19,24 @@ default via 192.168.1.1 dev wlx78542e05b134 proto dhcp metric 600
 192.168.1.0/24 dev wlx78542e05b134 proto kernel scope link src 192.168.1.169 metric 600 
 
 l           9254  0.0  0.0  10104  3840 pts/2    S+   May27   0:01 /bin/bash /home/l/bin/vvkeepRunSyncForm
-l        2484660  0.0  0.0   9212  2560 pts/2    S+   18:33   0:00 grep vvkeep
+l        2504410  0.0  0.0   9212  2560 pts/2    S+   19:05   0:00 grep vvkeep
 
 l           9262  0.0  0.3  39348 29812 pts/2    S+   May27   0:31 /bin/python3 /home/l/bin/vvupdateFormToShorturl.py
-l        2484662  0.0  0.0   9212  2560 pts/2    S+   18:33   0:00 grep vvupdate
+l        2504412  0.0  0.0   9212  2560 pts/2    S+   19:05   0:00 grep vvupdate
 
-top - 18:33:09 up 2 days, 20:45,  3 users,  load average: 0.18, 0.12, 0.10
-Tasks: 237 total,   1 running, 236 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  3.0 us,  1.5 sy,  0.0 ni, 95.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :   7729.8 total,   3950.0 free,    636.3 used,   3143.5 buff/cache
-MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6784.2 avail Mem 
+top - 19:05:58 up 2 days, 21:17,  3 users,  load average: 0.01, 0.05, 0.08
+Tasks: 237 total,   3 running, 234 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 10.8 us,  9.2 sy,  0.0 ni, 80.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7729.8 total,   3950.6 free,    634.3 used,   3144.8 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6786.1 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-      1 root      20   0  168424  13624   8376 S   0.0   0.2   1:13.48 systemd
+    884 gdm       20   0   17708  10112   7936 S  12.5   0.1   1:17.19 systemd
+      1 root      20   0  168424  13624   8376 S   6.2   0.2   1:14.08 systemd
+    717 root      20   0  393080  13988  10788 R   6.2   0.2   1:08.52 udisksd
+    814 root      20   0 1432944  52040  34560 S   6.2   0.7   3:44.33 contain+
+   3239 gdm       20   0  312300   8192   7296 S   6.2   0.1   0:43.83 gsd-hou+
+2504413 l         20   0   13080   4096   3328 R   6.2   0.1   0:00.01 top
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.16 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
       4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par+
@@ -39,8 +44,3 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6784.2 avail Mem
       6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
       8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
      11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_perc+
-     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+
-     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+
-     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+
-     15 root      20   0       0      0      0 S   0.0   0.0   0:09.76 ksoftir+
-     16 root      20   0       0      0      0 I   0.0   0.0   1:34.34 rcu_pre+
