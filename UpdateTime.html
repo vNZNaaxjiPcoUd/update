@@ -1,10 +1,11 @@
-24/06/06 22:46:05
+24/06/06 23:18:48
 
 l
 
     inet 127.0.0.1/8 scope host lo
     inet6 ::1/128 scope host 
     inet 192.168.1.169/24 brd 192.168.1.255 scope global dynamic noprefixroute wlx78542e05b134
+    inet6 fda0:2c53:696e:913d:d096:10d4:9130:a00e/64 scope global deprecated dynamic mngtmpaddr noprefixroute 
     inet6 fd8f:5afd:720f:b5a6:dacc:a9a6:55a9:8247/64 scope global dynamic mngtmpaddr noprefixroute 
     inet6 fe80::159b:ebe8:d5a3:75f9/64 scope link noprefixroute 
     inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
@@ -19,20 +20,19 @@ default via 192.168.1.1 dev wlx78542e05b134 proto dhcp metric 600
 192.168.1.0/24 dev wlx78542e05b134 proto kernel scope link src 192.168.1.169 metric 600 
 
 l           9254  0.0  0.0  10104  3840 pts/2    S+   May27   0:05 /bin/bash /home/l/bin/vvkeepRunSyncForm
-l         310426  0.0  0.0   9212  2560 pts/2    S+   22:46   0:00 grep vvkeep
+l         330125  0.0  0.0   9212  2560 pts/2    S+   23:18   0:00 grep vvkeep
 
 l          54815  0.0  0.3  39332 29220 pts/2    S+   15:40   0:03 /bin/python3 /home/l/bin/vvupdateFormToShorturl.py
-l         310428  0.0  0.0   9212  2560 pts/2    S+   22:46   0:00 grep vvupdate
+l         330128  0.0  0.0   9212  2560 pts/2    S+   23:18   0:00 grep vvupdate
 
-top - 22:46:05 up 10 days, 57 min,  3 users,  load average: 0.07, 0.08, 0.08
-Tasks: 237 total,   1 running, 236 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  1.6 us,  4.7 sy,  0.0 ni, 93.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :   7729.8 total,   3670.1 free,    639.9 used,   3419.8 buff/cache
-MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6766.7 avail Mem 
+top - 23:18:49 up 10 days,  1:30,  3 users,  load average: 0.12, 0.14, 0.10
+Tasks: 238 total,   1 running, 237 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.6 us,  1.6 sy,  0.0 ni, 96.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7729.8 total,   3674.9 free,    634.6 used,   3420.2 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6771.9 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-    691 message+  20   0   10124   6016   4096 S   6.2   0.1  28:46.29 dbus-da+
-      1 root      20   0  168312  13624   8376 S   0.0   0.2   4:15.65 systemd
+      1 root      20   0  168312  13624   8376 S   0.0   0.2   4:16.14 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.56 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
       4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par+
@@ -43,4 +43,5 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6766.7 avail Mem
      12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+
      13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+
      14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+
-     15 root      20   0       0      0      0 S   0.0   0.0   0:34.41 ksoftir+
+     15 root      20   0       0      0      0 S   0.0   0.0   0:34.49 ksoftir+
+     16 root      20   0       0      0      0 I   0.0   0.0   5:31.78 rcu_pre+
