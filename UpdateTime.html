@@ -1,4 +1,4 @@
-24/06/19 19:11:48
+24/06/19 19:44:39
 
 l
 
@@ -19,21 +19,23 @@ default via 192.168.1.1 dev wlx78542e05b134 proto dhcp metric 600
 192.168.1.0/24 dev wlx78542e05b134 proto kernel scope link src 192.168.1.169 metric 600 
 
 l           9254  0.0  0.0  10104  3840 pts/2    S+   May27   0:13 /bin/bash /home/l/bin/vvkeepRunSyncForm
-l        3049190  0.0  0.0   9212  2560 pts/2    S+   19:11   0:00 grep vvkeep
+l        3068884  0.0  0.0   9212  2560 pts/2    S+   19:44   0:00 grep vvkeep
 
 l          54815  0.0  0.3  39464 29732 pts/2    S+   Jun06   2:25 /bin/python3 /home/l/bin/vvupdateFormToShorturl.py
-l        3049192  0.0  0.0   9212  2560 pts/2    S+   19:11   0:00 grep vvupdate
+l        3068886  0.0  0.0   9212  2560 pts/2    S+   19:44   0:00 grep vvupdate
 
-top - 19:11:48 up 22 days, 21:23,  3 users,  load average: 0.09, 0.06, 0.06
-Tasks: 237 total,   1 running, 236 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  1.6 us,  0.0 sy,  0.0 ni, 98.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :   7729.8 total,   3495.9 free,    643.3 used,   3590.6 buff/cache
-MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6743.3 avail Mem 
+top - 19:44:39 up 22 days, 21:56,  3 users,  load average: 0.11, 0.13, 0.10
+Tasks: 238 total,   1 running, 237 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.6 us,  4.8 sy,  0.0 ni, 93.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7729.8 total,   3491.4 free,    647.7 used,   3590.6 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6738.9 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-     29 root      20   0       0      0      0 S   6.7   0.0   1:44.31 ksoftir+
-      1 root      20   0  168328  13624   8376 S   0.0   0.2   9:43.23 systemd
-      2 root      20   0       0      0      0 S   0.0   0.0   0:01.27 kthreadd
+    701 root      20   0  237072  10516   7132 S   6.2   0.1  26:01.40 polkitd
+    817 root      20   0  530232  32768  27648 S   6.2   0.4  86:48.55 rustdesk
+3068887 l         20   0   13080   4096   3328 R   6.2   0.1   0:00.01 top
+      1 root      20   0  168328  13624   8376 S   0.0   0.2   9:43.75 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:01.28 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
       4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par+
       5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_fl+
@@ -42,5 +44,3 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6743.3 avail Mem
      11 root       0 -20       0      0      0 I   0.0   0.0   0:00.01 mm_perc+
      12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+
      13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+
-     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+
-     15 root      20   0       0      0      0 S   0.0   0.0   1:17.13 ksoftir+
