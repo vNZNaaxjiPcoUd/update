@@ -1,4 +1,4 @@
-24/06/30 12:43:21
+24/06/30 12:45:21
 
 l
 
@@ -357,24 +357,21 @@ l        2026422  0.0  0.0   2892  1664 ?        Ss   12:00   0:00 /bin/sh -c /h
 l        2026423  0.0  0.0  10488  3968 ?        S    12:00   0:00 /bin/bash /home/l/bin/vvkeepRunSyncForm
 l        2094017  0.0  0.0   2892  1664 ?        Ss   12:30   0:00 /bin/sh -c /home/l/bin/vvkeepRunSyncForm
 l        2094018  0.0  0.0  10488  3968 ?        S    12:30   0:00 /bin/bash /home/l/bin/vvkeepRunSyncForm
-l        2125012  0.0  0.0   9212  2560 pts/3    S+   12:43   0:00 grep vvkeep
+l        2129409  0.0  0.0   9212  2560 pts/3    S+   12:45   0:00 grep vvkeep
 
 l         225462  0.0  0.1  23892 10880 pts/7    S+   Jun29   0:00 vi /home/l/bin/vvupdateFormToShorturl.py
-l        2125001 10.0  0.3  36204 24256 pts/3    S+   12:43   0:00 /bin/python3 /home/l/bin/vvupdateFormToShorturl.py
-l        2125014  0.0  0.0   9212  2560 pts/3    S+   12:43   0:00 grep vvupdate
+l        2129398  9.0  0.3  36204 24104 pts/3    S+   12:45   0:00 /bin/python3 /home/l/bin/vvupdateFormToShorturl.py
+l        2129411  0.0  0.0   9212  2560 pts/3    S+   12:45   0:00 grep vvupdate
 
-top - 12:43:21 up 1 day, 33 min,  8 users,  load average: 0.71, 0.80, 0.73
-Tasks: 913 total,   1 running, 912 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  4.2 us, 18.1 sy,  0.0 ni, 77.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :   7729.8 total,   4256.1 free,   1004.6 used,   2469.0 buff/cache
-MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6455.8 avail Mem 
+top - 12:45:21 up 1 day, 35 min,  8 users,  load average: 0.77, 0.80, 0.74
+Tasks: 912 total,   2 running, 910 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  5.5 us,  9.6 sy,  0.0 ni, 83.6 id,  0.0 wa,  0.0 hi,  1.4 si,  0.0 st
+MiB Mem :   7729.8 total,   4248.6 free,   1011.7 used,   2469.5 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6448.6 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-2098307 root      20   0       0      0      0 I  23.5   0.0   0:01.71 kworker/1:0-i915-unordered
-    657 avahi     20   0    8060   4352   3584 S   5.9   0.1   1:17.74 avahi-daemon
-    783 root      20   0  530256  32768  27520 S   5.9   0.4   6:18.93 rustdesk
-2125015 l         20   0   13884   4864   3328 R   5.9   0.1   0:00.02 top
-      1 root      20   0  166864  12020   8436 S   0.0   0.2   0:48.82 systemd
+2129412 l         20   0   13884   4864   3328 R   5.9   0.1   0:00.02 top
+      1 root      20   0  166864  12020   8436 S   0.0   0.2   0:48.88 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.04 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
       4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
@@ -383,3 +380,6 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6455.8 avail Mem
       8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
      11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
      12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_kthread
+     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     15 root      20   0       0      0      0 S   0.0   0.0   0:48.40 ksoftirqd/0
