@@ -1,4 +1,4 @@
-24/06/30 12:41:21
+24/06/30 12:43:21
 
 l
 
@@ -342,7 +342,7 @@ l        1506163  0.0  0.0  10488  4096 ?        S    08:00   0:00 /bin/bash /ho
 l        1569184  0.0  0.0   2892  1664 ?        Ss   08:30   0:00 /bin/sh -c /home/l/bin/vvkeepRunSyncForm
 l        1569185  0.0  0.0  10488  4096 ?        S    08:30   0:00 /bin/bash /home/l/bin/vvkeepRunSyncForm
 l        1632516  0.0  0.0   2892  1664 ?        Ss   09:00   0:00 /bin/sh -c /home/l/bin/vvkeepRunSyncForm
-l        1632517  0.0  0.0  10488  3968 ?        S    09:00   0:00 /bin/bash /home/l/bin/vvkeepRunSyncForm
+l        1632517  0.0  0.0  10488  4096 ?        S    09:00   0:00 /bin/bash /home/l/bin/vvkeepRunSyncForm
 l        1696230  0.0  0.0   2892  1664 ?        Ss   09:30   0:00 /bin/sh -c /home/l/bin/vvkeepRunSyncForm
 l        1696231  0.0  0.0  10488  4096 ?        S    09:30   0:00 /bin/bash /home/l/bin/vvkeepRunSyncForm
 l        1761056  0.0  0.0   2892  1664 ?        Ss   10:00   0:00 /bin/sh -c /home/l/bin/vvkeepRunSyncForm
@@ -357,21 +357,24 @@ l        2026422  0.0  0.0   2892  1664 ?        Ss   12:00   0:00 /bin/sh -c /h
 l        2026423  0.0  0.0  10488  3968 ?        S    12:00   0:00 /bin/bash /home/l/bin/vvkeepRunSyncForm
 l        2094017  0.0  0.0   2892  1664 ?        Ss   12:30   0:00 /bin/sh -c /home/l/bin/vvkeepRunSyncForm
 l        2094018  0.0  0.0  10488  3968 ?        S    12:30   0:00 /bin/bash /home/l/bin/vvkeepRunSyncForm
-l        2120521  0.0  0.0   9212  2560 pts/3    S+   12:41   0:00 grep vvkeep
+l        2125012  0.0  0.0   9212  2560 pts/3    S+   12:43   0:00 grep vvkeep
 
 l         225462  0.0  0.1  23892 10880 pts/7    S+   Jun29   0:00 vi /home/l/bin/vvupdateFormToShorturl.py
-l        2120510  0.0  0.3  36204 24224 pts/3    S+   12:41   0:00 /bin/python3 /home/l/bin/vvupdateFormToShorturl.py
-l        2120523  0.0  0.0   9212  2560 pts/3    S+   12:41   0:00 grep vvupdate
+l        2125001 10.0  0.3  36204 24256 pts/3    S+   12:43   0:00 /bin/python3 /home/l/bin/vvupdateFormToShorturl.py
+l        2125014  0.0  0.0   9212  2560 pts/3    S+   12:43   0:00 grep vvupdate
 
-top - 12:41:21 up 1 day, 31 min,  8 users,  load average: 0.91, 0.84, 0.74
+top - 12:43:21 up 1 day, 33 min,  8 users,  load average: 0.71, 0.80, 0.73
 Tasks: 913 total,   1 running, 912 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  0.0 us,  4.0 sy,  0.0 ni, 96.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :   7729.8 total,   4261.4 free,    999.7 used,   2468.7 buff/cache
-MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6460.6 avail Mem 
+%Cpu(s):  4.2 us, 18.1 sy,  0.0 ni, 77.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7729.8 total,   4256.1 free,   1004.6 used,   2469.0 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6455.8 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-2120524 l         20   0   13884   4864   3328 R  11.8   0.1   0:00.03 top
-      1 root      20   0  166864  12020   8436 S   0.0   0.2   0:48.74 systemd
+2098307 root      20   0       0      0      0 I  23.5   0.0   0:01.71 kworker/1:0-i915-unordered
+    657 avahi     20   0    8060   4352   3584 S   5.9   0.1   1:17.74 avahi-daemon
+    783 root      20   0  530256  32768  27520 S   5.9   0.4   6:18.93 rustdesk
+2125015 l         20   0   13884   4864   3328 R   5.9   0.1   0:00.02 top
+      1 root      20   0  166864  12020   8436 S   0.0   0.2   0:48.82 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.04 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
       4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
@@ -380,6 +383,3 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6460.6 avail Mem
       8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
      11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
      12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_kthread
-     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
-     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
-     15 root      20   0       0      0      0 S   0.0   0.0   0:48.15 ksoftirqd/0
