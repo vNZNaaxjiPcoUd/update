@@ -1,4 +1,4 @@
-24/06/30 03:23:06
+24/06/30 03:25:06
 
 l
 
@@ -318,21 +318,23 @@ l         873410  0.0  0.0   2892  1664 ?        Ss   02:30   0:00 /bin/sh -c /h
 l         873411  0.0  0.0  10488  4096 ?        S    02:30   0:00 /bin/bash /home/l/bin/vvkeepRunSyncForm
 l         925841  0.0  0.0   2892  1664 ?        Ss   03:00   0:00 /bin/sh -c /home/l/bin/vvkeepRunSyncForm
 l         925842  0.0  0.0  10488  4096 ?        S    03:00   0:00 /bin/bash /home/l/bin/vvkeepRunSyncForm
-l         967551  0.0  0.0   9212  2560 pts/3    S+   03:23   0:00 grep vvkeep
+l         971122  0.0  0.0   9212  2560 pts/3    S+   03:25   0:00 grep vvkeep
 
 l         225462  0.0  0.1  23892 10880 pts/7    S+   Jun29   0:00 vi /home/l/bin/vvupdateFormToShorturl.py
-l         967540  0.0  0.3  36204 24480 pts/3    S+   03:23   0:00 /bin/python3 /home/l/bin/vvupdateFormToShorturl.py
-l         967553  0.0  0.0   9212  2560 pts/3    S+   03:23   0:00 grep vvupdate
+l         971111  0.0  0.3  36204 24196 pts/3    S+   03:25   0:00 /bin/python3 /home/l/bin/vvupdateFormToShorturl.py
+l         971124  0.0  0.0   9212  2560 pts/3    S+   03:25   0:00 grep vvupdate
 
-top - 03:23:06 up 15:12,  8 users,  load average: 0.87, 0.61, 0.54
-Tasks: 839 total,   1 running, 838 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  6.8 us,  8.2 sy,  0.0 ni, 84.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :   7729.8 total,   4382.2 free,   1001.2 used,   2346.4 buff/cache
-MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6467.7 avail Mem 
+top - 03:25:06 up 15:14,  8 users,  load average: 1.06, 0.76, 0.61
+Tasks: 841 total,   2 running, 839 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  5.2 us,  5.2 sy,  0.0 ni, 89.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7729.8 total,   4382.7 free,   1000.5 used,   2346.6 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6468.4 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
- 967554 l         20   0   13752   4736   3328 R  17.6   0.1   0:00.03 top
-      1 root      20   0  167004  12020   8436 S   0.0   0.2   0:29.12 systemd
+ 971125 l         20   0   13752   4608   3328 R  23.5   0.1   0:00.04 top
+ 971129 root      20   0   12692   3584   3072 R  11.8   0.0   0:00.02 pgrep
+    610 systemd+  20   0   14836   6784   6016 S   5.9   0.1   1:21.55 systemd-oomd
+      1 root      20   0  167004  12020   8436 S   0.0   0.2   0:29.19 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.03 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
       4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
@@ -342,5 +344,3 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6467.7 avail Mem
      11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
      12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_kthread
      13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
-     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
-     15 root      20   0       0      0      0 S   0.0   0.0   0:17.18 ksoftirqd/0
