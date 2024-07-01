@@ -1,11 +1,11 @@
-24/07/01 02:07:44
+24/07/01 02:09:44
 
 l
 
     inet 127.0.0.1/8 scope host lo
     inet6 ::1/128 scope host 
     inet 192.168.1.169/24 brd 192.168.1.255 scope global dynamic noprefixroute wlx78542e05b134
-    inet6 fd8f:5afd:720f:b5a6:dacc:a9a6:55a9:8247/64 scope global dynamic mngtmpaddr noprefixroute 
+    inet6 fd8f:5afd:720f:b5a6:dacc:a9a6:55a9:8247/64 scope global deprecated dynamic mngtmpaddr noprefixroute 
     inet6 fda0:2c53:696e:913d:332f:f15e:2198:484/64 scope global temporary dynamic 
     inet6 fda0:2c53:696e:913d:d096:10d4:9130:a00e/64 scope global dynamic mngtmpaddr noprefixroute 
     inet6 fe80::159b:ebe8:d5a3:75f9/64 scope link noprefixroute 
@@ -171,7 +171,7 @@ l         333529  0.0  0.0  10620  4096 ?        S    Jun29   0:01 /bin/bash /ho
 l         335543  0.0  0.0   2892  1664 ?        Ss   Jun29   0:00 /bin/sh -c /home/l/bin/vvkeepRunSyncForm
 l         335544  0.0  0.0  10620  4096 ?        S    Jun29   0:01 /bin/bash /home/l/bin/vvkeepRunSyncForm
 l         337601  0.0  0.0   2892  1664 ?        Ss   Jun29   0:00 /bin/sh -c /home/l/bin/vvkeepRunSyncForm
-l         337602  0.0  0.0  10620  4096 ?        S    Jun29   0:01 /bin/bash /home/l/bin/vvkeepRunSyncForm
+l         337602  0.0  0.0  10760  4096 ?        S    Jun29   0:01 /bin/bash /home/l/bin/vvkeepRunSyncForm
 l         339766  0.0  0.0   2892  1664 ?        Ss   Jun29   0:00 /bin/sh -c /home/l/bin/vvkeepRunSyncForm
 l         339767  0.0  0.0  10620  4096 ?        S    Jun29   0:01 /bin/bash /home/l/bin/vvkeepRunSyncForm
 l         341822  0.0  0.0   2892  1664 ?        Ss   Jun29   0:00 /bin/sh -c /home/l/bin/vvkeepRunSyncForm
@@ -411,21 +411,21 @@ l        4038566  0.0  0.0   2892  1664 ?        Ss   01:30   0:00 /bin/sh -c /h
 l        4038567  0.0  0.0  10488  3968 ?        S    01:30   0:00 /bin/bash /home/l/bin/vvkeepRunSyncForm
 l        4118886  0.0  0.0   2892  1664 ?        Ss   02:00   0:00 /bin/sh -c /home/l/bin/vvkeepRunSyncForm
 l        4118887  0.0  0.0  10488  3968 ?        S    02:00   0:00 /bin/bash /home/l/bin/vvkeepRunSyncForm
-l        4138596  0.0  0.0   9212  2560 pts/3    S+   02:07   0:00 grep vvkeep
+l        4144031  0.0  0.0   9212  2560 pts/3    S+   02:09   0:00 grep vvkeep
 
 l         225462  0.0  0.1  23892 10880 pts/7    S+   Jun29   0:00 vi /home/l/bin/vvupdateFormToShorturl.py
-l        4138584  0.0  0.3  36204 24352 pts/3    S+   02:07   0:00 /bin/python3 /home/l/bin/vvupdateFormToShorturl.py
-l        4138598  0.0  0.0   9212  2560 pts/3    S+   02:07   0:00 grep vvupdate
+l        4144019  9.0  0.3  36204 24348 pts/3    S+   02:09   0:00 /bin/python3 /home/l/bin/vvupdateFormToShorturl.py
+l        4144033  0.0  0.0   9212  2560 pts/3    S+   02:09   0:00 grep vvupdate
 
-top - 02:07:44 up 1 day, 13:57,  8 users,  load average: 0.72, 0.68, 0.67
-Tasks: 1024 total,   1 running, 1023 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  6.3 us,  5.1 sy,  0.0 ni, 88.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :   7729.8 total,   3975.5 free,   1082.4 used,   2671.9 buff/cache
-MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6372.7 avail Mem 
+top - 02:09:44 up 1 day, 13:59,  8 users,  load average: 0.63, 0.65, 0.66
+Tasks: 1022 total,   1 running, 1021 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  5.3 sy,  0.0 ni, 94.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7729.8 total,   3967.8 free,   1089.7 used,   2672.3 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6365.5 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-4138599 l         20   0   14016   4864   3328 R  18.8   0.1   0:00.04 top
-      1 root      20   0  167008  12020   8436 S   0.0   0.2   1:18.23 systemd
+4144034 l         20   0   14016   4992   3328 R  11.8   0.1   0:00.03 top
+      1 root      20   0  167008  12020   8436 S   0.0   0.2   1:18.31 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.07 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
       4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
@@ -436,4 +436,4 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6372.7 avail Mem
      12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_kthread
      13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
      14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
-     15 root      20   0       0      0      0 S   0.0   0.0   1:44.49 ksoftirqd/0
+     15 root      20   0       0      0      0 S   0.0   0.0   1:44.64 ksoftirqd/0
