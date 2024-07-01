@@ -1,4 +1,4 @@
-24/07/01 08:01:55
+24/07/01 08:03:55
 
 l
 
@@ -341,8 +341,8 @@ l         873411  0.0  0.0  10756  4096 ?        S    Jun30   0:01 /bin/bash /ho
 l         925841  0.0  0.0   2892  1664 ?        Ss   Jun30   0:00 /bin/sh -c /home/l/bin/vvkeepRunSyncForm
 l         925842  0.0  0.0  10756  4096 ?        S    Jun30   0:01 /bin/bash /home/l/bin/vvkeepRunSyncForm
 l         945531  0.0  0.0   2892  1664 ?        Ss   08:00   0:00 /bin/sh -c /home/l/bin/vvkeepRunSyncForm
-l         945532  0.0  0.0   9972  3456 ?        S    08:00   0:00 /bin/bash /home/l/bin/vvkeepRunSyncForm
-l         951347  0.0  0.0   9212  2560 pts/3    S+   08:01   0:00 grep vvkeep
+l         945532  0.0  0.0  10488  3968 ?        S    08:00   0:00 /bin/bash /home/l/bin/vvkeepRunSyncForm
+l         957153  0.0  0.0   9212  2560 pts/3    S+   08:03   0:00 grep vvkeep
 l         978789  0.0  0.0   2892  1664 ?        Ss   Jun30   0:00 /bin/sh -c /home/l/bin/vvkeepRunSyncForm
 l         978790  0.0  0.0  10756  4096 ?        S    Jun30   0:01 /bin/bash /home/l/bin/vvkeepRunSyncForm
 l        1032788  0.0  0.0   2892  1664 ?        Ss   Jun30   0:00 /bin/sh -c /home/l/bin/vvkeepRunSyncForm
@@ -437,18 +437,20 @@ l        4118886  0.0  0.0   2892  1664 ?        Ss   02:00   0:00 /bin/sh -c /h
 l        4118887  0.0  0.0  10488  4096 ?        S    02:00   0:00 /bin/bash /home/l/bin/vvkeepRunSyncForm
 
 l         225462  0.0  0.1  23892 10880 pts/7    S+   Jun29   0:00 vi /home/l/bin/vvupdateFormToShorturl.py
-l         951336  0.0  0.3  36204 24348 pts/3    S+   08:01   0:00 /bin/python3 /home/l/bin/vvupdateFormToShorturl.py
-l         951352  0.0  0.0   9212  2560 pts/3    S+   08:01   0:00 grep vvupdate
+l         957142  0.0  0.3  36204 24180 pts/3    S+   08:03   0:00 /bin/python3 /home/l/bin/vvupdateFormToShorturl.py
+l         957155  0.0  0.0   9212  2560 pts/3    S+   08:03   0:00 grep vvupdate
 
-top - 08:01:55 up 1 day, 19:51,  8 users,  load average: 0.84, 0.81, 0.82
-Tasks: 1071 total,   1 running, 1070 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  0.0 us,  5.2 sy,  0.0 ni, 94.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :   7729.8 total,   3842.1 free,   1121.8 used,   2765.9 buff/cache
-MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6330.8 avail Mem 
+top - 08:03:55 up 1 day, 19:53,  8 users,  load average: 1.04, 0.88, 0.84
+Tasks: 1069 total,   1 running, 1068 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  5.1 us, 11.5 sy,  0.0 ni, 83.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7729.8 total,   3844.8 free,   1118.4 used,   2766.5 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6334.2 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
- 951356 l         20   0   14016   4992   3328 R  17.6   0.1   0:00.04 top
-      1 root      20   0  167008  12020   8436 S   0.0   0.2   1:31.63 systemd
+ 957156 l         20   0   14016   4992   3328 R  17.6   0.1   0:00.04 top
+    659 message+  20   0   10108   6016   4096 S   5.9   0.1   4:57.52 dbus-daemon
+    783 root      20   0  530256  32512  27520 S   5.9   0.4  12:54.90 rustdesk
+      1 root      20   0  167008  12020   8436 S   0.0   0.2   1:31.71 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.08 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
       4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
@@ -458,5 +460,3 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6330.8 avail Mem
      11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
      12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_kthread
      13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
-     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
-     15 root      20   0       0      0      0 S   0.0   0.0   2:13.62 ksoftirqd/0
