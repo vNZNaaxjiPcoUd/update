@@ -1,4 +1,4 @@
-24/07/01 02:27:44
+24/07/01 02:29:44
 
 l
 
@@ -19,6 +19,7 @@ default via 192.168.1.1 dev wlx78542e05b134 proto dhcp metric 600
 172.18.0.0/16 dev br-d0adf0a4debb proto kernel scope link src 172.18.0.1 
 192.168.1.0/24 dev wlx78542e05b134 proto kernel scope link src 192.168.1.169 metric 600 
 
+l           4272  0.0  0.0   9080  2560 pts/3    S+   02:29   0:00 grep vvkeep
 l         216177  0.0  0.0   2892  1664 ?        Ss   Jun29   0:00 /bin/sh -c /home/l/bin/vvkeepRunSyncForm
 l         216178  0.0  0.0  10488  4096 ?        S    Jun29   0:01 /bin/bash /home/l/bin/vvkeepRunSyncForm
 l         217419  0.0  0.0   2892  1664 ?        Ss   Jun29   0:00 /bin/sh -c /home/l/bin/vvkeepRunSyncForm
@@ -410,21 +411,20 @@ l        4038566  0.0  0.0   2892  1664 ?        Ss   01:30   0:00 /bin/sh -c /h
 l        4038567  0.0  0.0  10488  3968 ?        S    01:30   0:00 /bin/bash /home/l/bin/vvkeepRunSyncForm
 l        4118886  0.0  0.0   2892  1664 ?        Ss   02:00   0:00 /bin/sh -c /home/l/bin/vvkeepRunSyncForm
 l        4118887  0.0  0.0  10488  3968 ?        S    02:00   0:00 /bin/bash /home/l/bin/vvkeepRunSyncForm
-l        4192495  0.0  0.0   9212  2560 pts/3    S+   02:27   0:00 grep vvkeep
 
+l           4259  0.0  0.3  36204 24016 pts/3    S+   02:29   0:00 /bin/python3 /home/l/bin/vvupdateFormToShorturl.py
+l           4274  0.0  0.0   9212  2560 pts/3    S+   02:29   0:00 grep vvupdate
 l         225462  0.0  0.1  23892 10880 pts/7    S+   Jun29   0:00 vi /home/l/bin/vvupdateFormToShorturl.py
-l        4192482  0.0  0.3  36204 24352 pts/3    S+   02:27   0:00 /bin/python3 /home/l/bin/vvupdateFormToShorturl.py
-l        4192497  0.0  0.0   9212  2560 pts/3    S+   02:27   0:00 grep vvupdate
 
-top - 02:27:45 up 1 day, 14:17,  8 users,  load average: 0.65, 0.59, 0.56
+top - 02:29:45 up 1 day, 14:19,  8 users,  load average: 0.69, 0.61, 0.57
 Tasks: 1022 total,   1 running, 1021 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  1.3 us,  5.1 sy,  0.0 ni, 93.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :   7729.8 total,   3960.7 free,   1092.8 used,   2676.2 buff/cache
-MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6362.0 avail Mem 
+%Cpu(s):  3.9 us,  3.9 sy,  0.0 ni, 92.1 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7729.8 total,   3965.1 free,   1088.1 used,   2676.6 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6366.7 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-4192498 l         20   0   14016   4992   3328 R  17.6   0.1   0:00.04 top
-      1 root      20   0  167008  12020   8436 S   0.0   0.2   1:18.95 systemd
+   4275 l         20   0   14016   4992   3328 R  12.5   0.1   0:00.02 top
+      1 root      20   0  167008  12020   8436 S   0.0   0.2   1:19.03 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.07 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
       4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
@@ -435,4 +435,4 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6362.0 avail Mem
      12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_kthread
      13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
      14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
-     15 root      20   0       0      0      0 S   0.0   0.0   1:45.95 ksoftirqd/0
+     15 root      20   0       0      0      0 S   0.0   0.0   1:46.11 ksoftirqd/0
