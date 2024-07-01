@@ -1,4 +1,4 @@
-24/07/01 01:01:42
+24/07/01 01:03:42
 
 l
 
@@ -406,25 +406,23 @@ l        3803592  0.0  0.0  10488  3968 ?        S    00:00   0:00 /bin/bash /ho
 l        3882290  0.0  0.0   2892  1664 ?        Ss   00:30   0:00 /bin/sh -c /home/l/bin/vvkeepRunSyncForm
 l        3882291  0.0  0.0  10488  4096 ?        S    00:30   0:00 /bin/bash /home/l/bin/vvkeepRunSyncForm
 l        3959778  0.0  0.0   2892  1664 ?        Ss   01:00   0:00 /bin/sh -c /home/l/bin/vvkeepRunSyncForm
-l        3959779  0.0  0.0   9972  3456 ?        S    01:00   0:00 /bin/bash /home/l/bin/vvkeepRunSyncForm
-l        3964764  0.0  0.0   9212  2560 pts/3    S+   01:01   0:00 grep vvkeep
+l        3959779  0.0  0.0  10488  3968 ?        S    01:00   0:00 /bin/bash /home/l/bin/vvkeepRunSyncForm
+l        3969992  0.0  0.0   9212  2560 pts/3    S+   01:03   0:00 grep vvkeep
 
 l         225462  0.0  0.1  23892 10880 pts/7    S+   Jun29   0:00 vi /home/l/bin/vvupdateFormToShorturl.py
-l        3964753  9.0  0.3  36204 24340 pts/3    S+   01:01   0:00 /bin/python3 /home/l/bin/vvupdateFormToShorturl.py
-l        3964766  0.0  0.0   9212  2560 pts/3    S+   01:01   0:00 grep vvupdate
+l        3969981  8.0  0.3  36204 24040 pts/3    S+   01:03   0:00 /bin/python3 /home/l/bin/vvupdateFormToShorturl.py
+l        3969994  0.0  0.0   9212  2560 pts/3    S+   01:03   0:00 grep vvupdate
 
-top - 01:01:42 up 1 day, 12:51,  8 users,  load average: 0.61, 0.64, 0.70
-Tasks: 1016 total,   2 running, 1014 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  2.7 us,  5.4 sy,  0.0 ni, 91.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :   7729.8 total,   3999.0 free,   1075.3 used,   2655.5 buff/cache
-MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6380.2 avail Mem 
+top - 01:03:42 up 1 day, 12:53,  8 users,  load average: 0.83, 0.71, 0.72
+Tasks: 1014 total,   2 running, 1012 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  8.0 us,  5.3 sy,  0.0 ni, 86.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7729.8 total,   3997.8 free,   1075.9 used,   2656.1 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6379.6 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-3964767 l         20   0   14016   4992   3328 R  12.5   0.1   0:00.03 top
-    659 message+  20   0   10024   6016   4096 S   6.2   0.1   4:11.23 dbus-daemon
-3834421 root      20   0 1881904  39560  30336 S   6.2   0.5   0:09.45 rustdesk
-3964771 root      20   0   12692   3584   3072 R   6.2   0.0   0:00.01 pgrep
-      1 root      20   0  167008  12020   8436 S   0.0   0.2   1:15.88 systemd
+3969995 l         20   0   14016   4992   3328 R  12.5   0.1   0:00.03 top
+   3748 root      20   0   68580  14432  10496 S   6.2   0.2   0:08.72 php-fpm
+      1 root      20   0  167008  12020   8436 S   0.0   0.2   1:15.96 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.07 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
       4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
@@ -433,3 +431,5 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6380.2 avail Mem
       8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
      11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
      12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_kthread
+     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
