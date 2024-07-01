@@ -1,4 +1,4 @@
-24/07/01 01:05:42
+24/07/01 01:07:42
 
 l
 
@@ -300,7 +300,7 @@ l         493500  0.0  0.0  10620  4096 ?        S    Jun29   0:01 /bin/bash /ho
 l         496469  0.0  0.0   2892  1664 ?        Ss   Jun29   0:00 /bin/sh -c /home/l/bin/vvkeepRunSyncForm
 l         496470  0.0  0.0  10620  3968 ?        S    Jun29   0:01 /bin/bash /home/l/bin/vvkeepRunSyncForm
 l         499519  0.0  0.0   2892  1664 ?        Ss   Jun29   0:00 /bin/sh -c /home/l/bin/vvkeepRunSyncForm
-l         499520  0.0  0.0  10620  4096 ?        S    Jun29   0:01 /bin/bash /home/l/bin/vvkeepRunSyncForm
+l         499520  0.0  0.0  10760  4096 ?        S    Jun29   0:01 /bin/bash /home/l/bin/vvkeepRunSyncForm
 l         524036  0.0  0.0   2892  1664 ?        Ss   Jun29   0:00 /bin/sh -c /home/l/bin/vvkeepRunSyncForm
 l         524037  0.0  0.0  10620  4096 ?        S    Jun29   0:01 /bin/bash /home/l/bin/vvkeepRunSyncForm
 l         571820  0.0  0.0   2892  1664 ?        Ss   Jun29   0:00 /bin/sh -c /home/l/bin/vvkeepRunSyncForm
@@ -407,21 +407,22 @@ l        3882290  0.0  0.0   2892  1664 ?        Ss   00:30   0:00 /bin/sh -c /h
 l        3882291  0.0  0.0  10488  4096 ?        S    00:30   0:00 /bin/bash /home/l/bin/vvkeepRunSyncForm
 l        3959778  0.0  0.0   2892  1664 ?        Ss   01:00   0:00 /bin/sh -c /home/l/bin/vvkeepRunSyncForm
 l        3959779  0.0  0.0  10488  3968 ?        S    01:00   0:00 /bin/bash /home/l/bin/vvkeepRunSyncForm
-l        3975230  0.0  0.0   9212  2560 pts/3    S+   01:05   0:00 grep vvkeep
+l        3980527  0.0  0.0   9212  2560 pts/3    S+   01:07   0:00 grep vvkeep
 
 l         225462  0.0  0.1  23892 10880 pts/7    S+   Jun29   0:00 vi /home/l/bin/vvupdateFormToShorturl.py
-l        3975219  0.0  0.3  36204 24224 pts/3    S+   01:05   0:00 /bin/python3 /home/l/bin/vvupdateFormToShorturl.py
-l        3975232  0.0  0.0   9212  2560 pts/3    S+   01:05   0:00 grep vvupdate
+l        3980516  0.0  0.3  36204 24352 pts/3    S+   01:07   0:00 /bin/python3 /home/l/bin/vvupdateFormToShorturl.py
+l        3980529  0.0  0.0   9212  2560 pts/3    S+   01:07   0:00 grep vvupdate
 
-top - 01:05:42 up 1 day, 12:55,  8 users,  load average: 0.80, 0.73, 0.72
-Tasks: 1014 total,   1 running, 1013 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  5.3 us,  8.0 sy,  0.0 ni, 86.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :   7729.8 total,   3995.3 free,   1077.8 used,   2656.7 buff/cache
-MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6377.7 avail Mem 
+top - 01:07:42 up 1 day, 12:57,  8 users,  load average: 0.98, 0.81, 0.76
+Tasks: 1016 total,   2 running, 1014 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  5.3 us, 10.7 sy,  0.0 ni, 84.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7729.8 total,   3989.7 free,   1082.8 used,   2657.2 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6372.7 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-3975233 l         20   0   14016   4992   3328 R  17.6   0.1   0:00.04 top
-      1 root      20   0  167008  12020   8436 S   0.0   0.2   1:16.03 systemd
+3980530 l         20   0   14016   4992   3328 R  11.8   0.1   0:00.03 top
+3980535 root      20   0   12672   3456   3200 R   5.9   0.0   0:00.01 ps
+      1 root      20   0  167008  12020   8436 S   0.0   0.2   1:16.10 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.07 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
       4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
@@ -432,4 +433,3 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6377.7 avail Mem
      12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_kthread
      13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
      14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
-     15 root      20   0       0      0      0 S   0.0   0.0   1:40.09 ksoftirqd/0
